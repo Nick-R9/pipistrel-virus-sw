@@ -8,11 +8,11 @@
   <author> Aeromatic v 0.95 </author>
   <filecreationdate>2014-12-16</filecreationdate>
   <version>$Revision: 1.15 $</version>
-  <description> Models a Pipistrel Virus SW</description>
+  <description> Models a Pipistrel Virus SW 100. </description>
  </fileheader>
 
 <!--
-  File:     pipistre_virus_sw.xml
+  File:     virus_sw.xml
   Inputs:
     name:          pipistrel_virus_sw
     type:          light single
