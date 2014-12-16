@@ -1,0 +1,126 @@
+<PropertyList>
+ <sim>
+   <description>pipistrel virus sw</description>
+   <aircraft-version>0.1</aircraft-version>
+   <status>development</status>
+   <author>Nick R</author>
+   <flight-model>jsb</flight-model>
+   <aero>virus-sw-JSBSim</aero> 
+<!--   <startup>
+	<splash-texture>Aircraft/panthera/Pipistrel_Panthera splash.png</splash-texture>
+   </startup>-->
+   <splash-title>pipistrel virus sw</splash-title>
+   <model>
+     <path>Aircraft/pipistrel_virus_sw/Models/virus-sw.xml</path>
+       <livery>
+         <file type="string"/>
+       </livery>
+   </model>
+   
+   
+   
+   <nasal>
+    <ELT>
+      <file>YOUR/INSTRUMENT/FOLDER/ROUTE/HERE/ELTmessage.nas</file>
+    </ELT>
+  </nasal>
+		
+		
+		
+<view n="0">
+            <name>Pilot</name>
+            <type>lookfrom</type>
+            <internal type="bool">true</internal>
+            <config>
+                <ground-level-nearplane-m type="double">0.5f</ground-level-nearplane-m>
+                <x-offset-m type="double">-0.31</x-offset-m>
+                <y-offset-m type="double">0.62</y-offset-m>
+                <z-offset-m type="double">-1.35</z-offset-m>
+                <pitch-offset-deg>-12</pitch-offset-deg>
+                <limits>
+                    <enabled type="bool">false</enabled>
+                    <left>
+                        <heading-max-deg type="double">120</heading-max-deg>
+                        <x-offset-max-m type="double">0.10</x-offset-max-m>
+                        <x-offset-threshold-deg type="double">45</x-offset-threshold-deg>
+                    </left>
+                    <right>
+                        <heading-max-deg type="double">160</heading-max-deg>
+                        <x-offset-max-m type="double">0.20</x-offset-max-m>
+                        <x-offset-threshold-deg type="double">65</x-offset-threshold-deg>
+                    </right>
+                </limits>
+            </config>
+        </view>
+  <!--<sound>
+     <path>Aircraft/panthera/panthera-sound.xml</path>
+	</sound>-->
+  <!-- <autopilot>
+     <path>Aircraft/panthera/Dialogs/panthera-autopilot.xml</path>
+     </autopilot>-->
+   <menubar>
+   <default>
+    <menu n="100">
+     <label>virus sw</label>
+     <enabled type="bool">true</enabled>
+<!--     <item>
+      <label>Select Livery</label>
+      <binding>
+       <command>nasal</command>
+       <script>aircraft.livery.dialog.open()</script>
+      </binding>
+     </item>-->
+    </menu>
+   </default>
+   </menubar>
+ </sim>
+ 
+ <controls>
+ <engines>
+   <engine n="0">
+    <magnetos type="int">3</magnetos>
+    <master-bat type="bool">true</master-bat>
+    <master-alt type="bool">true</master-alt>
+   </engine>
+  </engines>
+  
+  <engines>
+    <engine>
+      <master-bat type="bool">true</master-bat>
+      <master-alt type="bool">true</master-alt>
+    </engine>
+  </engines>
+ </controls>
+ 
+ <engines>
+  <engine>
+   <rpm type="double">0</rpm>
+   <magnetos type="int">0</magnetos>
+   <mixture type="double">0</mixture>
+   <running type="bool">true</running>
+  </engine>
+ </engines>
+ 
+ <input>
+  <keyboard>
+ <key n="115">
+   <name>s</name>
+   <desc>Toggle Starter Switch</desc>
+   <binding>
+    <command>property-assign</command>
+    <property>/controls/engines/engine/starter</property>
+    <value >1</value>
+   </binding>
+   <mod-up>
+    <binding>
+     <command>property-assign</command>
+     <property>/controls/engines/engine/starter</property>
+     <value>0</value>
+    </binding>
+   </mod-up>
+  </key>
+  </keyboard> 
+ </input>
+
+ 
+</PropertyList>
