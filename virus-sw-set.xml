@@ -33,9 +33,9 @@
             <internal type="bool">true</internal>
             <config>
                 <ground-level-nearplane-m type="double">0.5f</ground-level-nearplane-m>
-                <x-offset-m type="double">-0.31</x-offset-m>
-                <y-offset-m type="double">0.62</y-offset-m>
-                <z-offset-m type="double">-1.35</z-offset-m>
+                <x-offset-m type="double">-0.20</x-offset-m>
+                <y-offset-m type="double">0.80</y-offset-m>
+                <z-offset-m type="double">0.30</z-offset-m>
                 <pitch-offset-deg>-12</pitch-offset-deg>
                 <limits>
                     <enabled type="bool">false</enabled>
