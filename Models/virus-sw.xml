@@ -37,6 +37,7 @@
 		<object-name>front_fairing</object-name>
 		<object-name>front_strut</object-name>
 		<object-name>front_w_shaft</object-name>
+		<object-name>test_plate</object-name>
 		
 		<property-base>sim/model/livery/</property-base> 
 		<texture-prop>texture</texture-prop>  
