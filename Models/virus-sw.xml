@@ -27,7 +27,9 @@
 		
 		<type>material</type> 
 		<object-name>fuslage</object-name>
-		<object-name>wind_shield</object-name>
+		<object-name>door</object-name>
+		<object-name>window</object-name>
+		<object-name>windshield</object-name>
 		<object-name>nose</object-name>
 		<object-name>prop</object-name>
 		<object-name>back_wheel</object-name>
