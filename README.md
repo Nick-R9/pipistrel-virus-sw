@@ -1,4 +1,4 @@
-fg-pipistrel-virus-sw
+Pipistrel Virus SW aircraft for FlightGear.
 =====================
 
 Pipistrel Virus SW 100 model for flightgear.
