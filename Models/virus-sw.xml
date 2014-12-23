@@ -1,21 +1,27 @@
 <?xml version="1.0" ?>  
 <PropertyList>  
-	    
+
  
   <path>virus-sw.ac</path>
 
 
-<effect>
+ <effect>
     <inherits-from>Effects/model-transparent</inherits-from>
-    <object-name>wind_shield</object-name>
+    <object-name>windshield</object-name>
+ </effect>
+ 
+ 
+ <effect>
+   <inherits-from>Effects/model-transparent</inherits-from>
+   <object-name>prop_fast</object-name>
  </effect>
 
 
-	<offsets> 
-		<heading-deg>-90</heading-deg>
-		<z-m>0.27</z-m>
-	</offsets>
-	
+ <offsets> 
+   <heading-deg>-90</heading-deg>
+   <z-m>0.27</z-m>
+ </offsets>
+
 
   
 	<animation>
@@ -30,8 +36,9 @@
 		<object-name>door</object-name>
 		<object-name>window</object-name>
 		<object-name>windshield</object-name>
-		<object-name>nose</object-name>
+		<object-name>spinner</object-name>
 		<object-name>prop</object-name>
+		<object-name>prop_fast</object-name>
 		<object-name>back_wheel</object-name>
 		<object-name>back_fairing</object-name>
 		<object-name>back_strut</object-name>
@@ -44,8 +51,8 @@
 		<texture-prop>texture</texture-prop>  
 		<!--<texture>Liveries/PPA.png</texture>-->
 	</animation>
-	
-	
+
+
  <animation>
    <type>select</type>
    <object-name>prop</object-name>
@@ -57,25 +64,25 @@
    </condition>
  </animation>
 
- <!--<animation>
+ <animation>
   <type>select</type>
-  <object-name>propeller_fast</object-name>
+  <object-name>prop_fast</object-name>
   <condition>
    <greater-than>
     <property>engines/engine[0]/rpm</property>
     <value>400</value>
    </greater-than>
   </condition>
- </animation>-->
+ </animation>
 
- <!--<animation>
+ <animation>
    <type>blend</type>
-   <object-name>propeller_fast</object-name>
+   <object-name>prop_fast</object-name>
    <property>engines/engine[0]/rpm</property>
-   <factor>0.0004</factor>
+   <factor>0.0002</factor>
    <max>1.0</max>
    <min>0.0</min>
- </animation>-->
+ </animation>
  
  <animation>
    <type>spin</type>
@@ -94,81 +101,41 @@
    </axis>
  </animation>
 
- <!--<animation>
+ <animation>
    <type>spin</type>
-   <object-name>propeller_fast</object-name>
+   <object-name>prop_fast</object-name>
    <property>engines/engine[0]/rpm</property>
    <factor>-0.001</factor>
    <center>
      <x-m>0</x-m>
-     <y-m>-3.77421</y-m>
-     <z-m>-0.15648</z-m>
+     <y-m>0</y-m>
+     <z-m>0</z-m>
    </center>
    <axis>
      <x>0</x>
      <y>1</y>
      <z>0</z>
    </axis>
- </animation>-->
- 
- <animation>
-	 <type>rotate</type>
-	 <object-name>back_wheel</object-name>
-	 <property>gear/gear/position-norm</property>
-	 <interpolation>
-		<entry><ind>1</ind><dep>0</dep></entry>
-		<entry><ind>0</ind><dep>90</dep></entry>
-	</interpolation>
-	 <center>
-		 <x-m>1.02276</x-m>
-		 <y-m>-1.32566</y-m>
-		 <z-m>-0.53887</z-m>
-	 </center>
-	 <axis>
-		 <x>0</x>
-		 <y>1</y>
-		 <z>0</z>
-	 </axis>
  </animation>
  
-<!-- <animation>
-	 <type>rotate</type>
-	 <object-name>gear_right</object-name>
-	 <property>gear/gear/position-norm</property>
-	 <interpolation>
-		<entry><ind>1</ind><dep>0</dep></entry>
-		<entry><ind>0</ind><dep>90</dep></entry>
-	</interpolation>
-	 <center>
-		 <x-m>-1.01914</x-m>
-		 <y-m>-1.32566</y-m>
-		 <z-m>-0.53887</z-m>
-	 </center>
-	 <axis>
-		 <x>0</x>
-		 <y>-1</y>
-		 <z>0</z>
-	 </axis>
- </animation>-->
- 
  <animation>
-	 <type>rotate</type>
-	 <object-name>front_wheel</object-name>
-	 <property>gear/gear/position-norm</property>
-	 <interpolation>
-		<entry><ind>1</ind><dep>0</dep></entry>
-		<entry><ind>0</ind><dep>115</dep></entry>
-	</interpolation>
-	 <center>
-		 <x-m>-0.00006</x-m>
-		 <y-m>-2.92519</y-m>
-		 <z-m>-0.66519</z-m>
-	 </center>
-	 <axis>
-		 <x>1</x>
-		 <y>0</y>
-		 <z>0</z>
-	 </axis>
+   <type>rotate</type>
+   <object-name>back_wheel</object-name>
+   <property>gear/gear/position-norm</property>
+     <interpolation>
+       <entry><ind>1</ind><dep>0</dep></entry>
+       <entry><ind>0</ind><dep>90</dep></entry>
+     </interpolation>
+     <center>
+       <x-m>1.02276</x-m>
+       <y-m>-1.32566</y-m>
+       <z-m>-0.53887</z-m>
+     </center>
+     <axis>
+       <x>0</x>
+       <y>1</y>
+       <z>0</z>
+     </axis>
  </animation>
-			 
+ 
 </PropertyList>
