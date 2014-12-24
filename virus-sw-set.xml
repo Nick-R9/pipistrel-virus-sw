@@ -24,10 +24,10 @@
       <file>YOUR/INSTRUMENT/FOLDER/ROUTE/HERE/ELTmessage.nas</file>
     </ELT>
   </nasal>
-		
-		
-		
-<view n="0">
+
+
+
+        <view n="0">
             <name>Pilot</name>
             <type>lookfrom</type>
             <internal type="bool">true</internal>
