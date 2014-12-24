@@ -24,7 +24,7 @@
 
 
   
-  <animation>
+<!--  <animation>
     <condition>
         <not>
             <property>sim/rendering/rembrandt/enabled</property>
@@ -32,26 +32,48 @@
     </condition>  
 
     <type>material</type> 
-    <object-name>fuslage</object-name>
-    <object-name>door</object-name>
-    <object-name>window</object-name>
-    <object-name>windshield</object-name>
-    <object-name>spinner</object-name>
-    <object-name>prop</object-name>
-    <object-name>prop_fast</object-name>
-    <object-name>back_wheel</object-name>
-    <object-name>back_fairing</object-name>
-    <object-name>back_strut</object-name>
-    <object-name>front_wheel</object-name>
-    <object-name>front_fairing</object-name>
-    <object-name>front_strut</object-name>
-    <object-name>front_w_shaft</object-name>
+      <object-name>dashboard</object-name>
+      <object-name>door</object-name>
+      <object-name>fairing_front</object-name>
+      <object-name>fairing_left</object-name>
+      <object-name>fairing_right</object-name>
+      <object-name>floor</object-name>
+      <object-name>front_wheel</object-name>
+      <object-name>fuslage</object-name>
+      <object-name>glareshield</object-name>
+      <object-name>prop</object-name>
+      <object-name>prop_fast</object-name>
+      <object-name>spinner</object-name>
+      <object-name>strut_front</object-name>
+      <object-name>strut_left</object-name>
+      <object-name>strut_right</object-name>
+      <object-name>w_shaft</object-name>
+      <object-name>wheel_left</object-name>
+      <object-name>wheel_right</object-name>
+      <object-name>window</object-name>
+      <object-name>windshield</object-name>
 
     <property-base>sim/model/livery/</property-base> 
     <texture-prop>texture</texture-prop>  
-    <!--<texture>Liveries/PPA.png</texture>-->
-  </animation>
-
+    <texture>Liveries/PVSWA.png</texture>
+  </animation>-->
+ 
+ <animation>
+   <type>spin</type>
+   <object-name>prop</object-name>
+   <property>engines/engine[0]/rpm</property>
+   <factor>-1</factor>
+   <center>
+     <x-m>0</x-m>
+     <y-m>0</y-m>
+     <z-m>0</z-m>
+   </center>
+   <axis>
+     <x>0</x>
+     <y>1</y>
+     <z>0</z>
+   </axis>
+ </animation>
 
  <animation>
    <type>select</type>
@@ -83,23 +105,6 @@
    <max>1.0</max>
    <min>0.0</min>
  </animation>
- 
- <animation>
-   <type>spin</type>
-   <object-name>prop</object-name>
-   <property>engines/engine[0]/rpm</property>
-   <factor>-1</factor>
-   <center>
-     <x-m>0</x-m>
-     <y-m>0</y-m>
-     <z-m>0</z-m>
-   </center>
-   <axis>
-     <x>0</x>
-     <y>1</y>
-     <z>0</z>
-   </axis>
- </animation>
 
  <animation>
    <type>spin</type>
@@ -117,25 +122,6 @@
      <z>0</z>
    </axis>
  </animation>
- 
- <animation>
-   <type>rotate</type>
-   <object-name>back_wheel</object-name>
-   <property>gear/gear/position-norm</property>
-     <interpolation>
-       <entry><ind>1</ind><dep>0</dep></entry>
-       <entry><ind>0</ind><dep>90</dep></entry>
-     </interpolation>
-     <center>
-       <x-m>1.02276</x-m>
-       <y-m>-1.32566</y-m>
-       <z-m>-0.53887</z-m>
-     </center>
-     <axis>
-       <x>0</x>
-       <y>1</y>
-       <z>0</z>
-     </axis>
- </animation>
+
  
 </PropertyList>
