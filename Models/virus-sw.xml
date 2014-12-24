@@ -24,33 +24,33 @@
 
 
   
-	<animation>
-		<condition>
-			<not>
-				<property>sim/rendering/rembrandt/enabled</property>
-			</not>
-		</condition>  
-		
-		<type>material</type> 
-		<object-name>fuslage</object-name>
-		<object-name>door</object-name>
-		<object-name>window</object-name>
-		<object-name>windshield</object-name>
-		<object-name>spinner</object-name>
-		<object-name>prop</object-name>
-		<object-name>prop_fast</object-name>
-		<object-name>back_wheel</object-name>
-		<object-name>back_fairing</object-name>
-		<object-name>back_strut</object-name>
-		<object-name>front_wheel</object-name>
-		<object-name>front_fairing</object-name>
-		<object-name>front_strut</object-name>
-		<object-name>front_w_shaft</object-name>
-		
-		<property-base>sim/model/livery/</property-base> 
-		<texture-prop>texture</texture-prop>  
-		<!--<texture>Liveries/PPA.png</texture>-->
-	</animation>
+  <animation>
+    <condition>
+        <not>
+            <property>sim/rendering/rembrandt/enabled</property>
+        </not>
+    </condition>  
+
+    <type>material</type> 
+    <object-name>fuslage</object-name>
+    <object-name>door</object-name>
+    <object-name>window</object-name>
+    <object-name>windshield</object-name>
+    <object-name>spinner</object-name>
+    <object-name>prop</object-name>
+    <object-name>prop_fast</object-name>
+    <object-name>back_wheel</object-name>
+    <object-name>back_fairing</object-name>
+    <object-name>back_strut</object-name>
+    <object-name>front_wheel</object-name>
+    <object-name>front_fairing</object-name>
+    <object-name>front_strut</object-name>
+    <object-name>front_w_shaft</object-name>
+
+    <property-base>sim/model/livery/</property-base> 
+    <texture-prop>texture</texture-prop>  
+    <!--<texture>Liveries/PPA.png</texture>-->
+  </animation>
 
 
  <animation>

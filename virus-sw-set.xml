@@ -7,11 +7,11 @@
    <flight-model>jsb</flight-model>
    <aero>virus-sw-JSBSim</aero> 
 <!--   <startup>
-	<splash-texture>Aircraft/panthera/Pipistrel_Panthera splash.png</splash-texture>
+	<splash-texture>Aircraft/panthera/virus-sw splash.png</splash-texture>
    </startup>-->
    <splash-title>pipistrel virus sw</splash-title>
    <model>
-     <path>Aircraft/pipistrel_virus_sw/Models/virus-sw.xml</path>
+     <path>Aircraft/pipistrel-virus-sw/Models/virus-sw.xml</path>
        <livery>
          <file type="string"/>
        </livery>
