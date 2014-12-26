@@ -123,5 +123,60 @@
    </axis>
  </animation>
 
+  <animation>
+    <type>rotate</type>
+    <object-name>strut_left</object-name>
+    <object-name>wheel_left</object-name>
+    <object-name>fairing_left</object-name>
+    <property>/gear/gear[1]/compression-norm</property>
+   <interpolation>
+     <entry>
+       <ind>0</ind>
+       <dep>5</dep>
+     </entry>
+     <entry>
+       <ind>0.2</ind>
+       <dep>-12</dep>
+     </entry>
+   </interpolation>
+    <center>
+      <x-m>0.30</x-m>
+      <y-m>0.33</y-m>
+      <z-m>-0.40</z-m>
+    </center>
+    <axis>
+      <x>0.0</x>
+      <y>1.0</y>
+      <z>0.0</z>
+    </axis>
+  </animation>
+
+  <animation>
+    <type>rotate</type>
+    <object-name>strut_right</object-name>
+    <object-name>wheel_right</object-name>
+    <object-name>fairing_right</object-name>
+    <property>/gear/gear[2]/compression-norm</property>
+   <interpolation>
+     <entry>
+       <ind>0</ind>
+       <dep>-5</dep>
+     </entry>
+     <entry>
+       <ind>0.2</ind>
+       <dep>12</dep>
+     </entry>
+   </interpolation>
+    <center>
+      <x-m>-0.30</x-m>
+      <y-m>0.33</y-m>
+      <z-m>-0.40</z-m>
+    </center>
+    <axis>
+      <x>0.0</x>
+      <y>1.0</y>
+      <z>0.0</z>
+    </axis>
+  </animation>
  
 </PropertyList>
