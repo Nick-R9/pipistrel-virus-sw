@@ -7,7 +7,7 @@
    <flight-model>jsb</flight-model>
    <aero>virus-sw-JSBSim</aero> 
 <!--   <startup>
-	<splash-texture>Aircraft/panthera/virus-sw splash.png</splash-texture>
+	<splash-texture>Aircraft/pipistrel-virus-sw/virus-sw splash.png</splash-texture>
    </startup>-->
    <splash-title>pipistrel virus sw</splash-title>
    <model>
@@ -52,11 +52,11 @@
                 </limits>
             </config>
         </view>
-  <!--<sound>
-     <path>Aircraft/panthera/panthera-sound.xml</path>
-	</sound>-->
+        <sound>
+          <path>Aircraft/pipistrel-virus-sw/virus-sw-sound.xml</path>
+        </sound>
   <!-- <autopilot>
-     <path>Aircraft/panthera/Dialogs/panthera-autopilot.xml</path>
+     <path>Aircraft/pipistrel-virus-sw/Dialogs/virus-sw-autopilot.xml</path>
      </autopilot>-->
    <menubar>
    <default>

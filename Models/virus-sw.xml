@@ -123,7 +123,7 @@
    </axis>
  </animation>
 
-  <animation>
+<!--  <animation>
     <type>rotate</type>
     <object-name>strut_left</object-name>
     <object-name>wheel_left</object-name>
@@ -177,6 +177,6 @@
       <y>1.0</y>
       <z>0.0</z>
     </axis>
-  </animation>
+  </animation>-->
  
 </PropertyList>
