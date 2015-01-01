@@ -34,8 +34,8 @@
             <config>
                 <ground-level-nearplane-m type="double">0.5f</ground-level-nearplane-m>
                 <x-offset-m type="double">-0.20</x-offset-m>
-                <y-offset-m type="double">0.65</y-offset-m>
-                <z-offset-m type="double">0.25</z-offset-m>
+		<y-offset-m type="double">0.68</y-offset-m><!--Down to up -->
+		<z-offset-m type="double">0.35</z-offset-m><!--Front to back-->
                 <pitch-offset-deg>-12</pitch-offset-deg>
                 <limits>
                     <enabled type="bool">false</enabled>
