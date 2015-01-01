@@ -1,24 +1,24 @@
 <?xml version="1.0"?>
 <?xml-stylesheet type="text/xsl" href="http://jsbsim.sourceforge.net/JSBSim.xsl"?>
-<fdm_config name="pipistrel_virus_sw" version="2.0" release="ALPHA"
+<fdm_config name="virus-sw" version="2.0" release="ALPHA"
    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
    xsi:noNamespaceSchemaLocation="http://jsbsim.sourceforge.net/JSBSim.xsd">
 
  <fileheader>
   <author> Aeromatic v 0.95 </author>
-  <filecreationdate>2014-12-16</filecreationdate>
+  <filecreationdate>2015-01-01</filecreationdate>
   <version>$Revision: 1.15 $</version>
   <description> Models a Pipistrel Virus SW 100. </description>
  </fileheader>
 
 <!--
-  File:     virus_sw.xml
+  File:     virus-sw.xml
   Inputs:
-    name:          pipistrel_virus_sw
+    name:          virus-sw
     type:          light single
     max weight:    1323 lb
     wing span:     35.13951 ft
-    length:        21.310095 ft
+    length:        21.3265 ft
     wing area:     102.37477911 sq-ft
     gear type:     tricycle
     retractable?:  no
@@ -41,19 +41,19 @@
  <metrics>
    <wingarea  unit="FT2">  102.37 </wingarea>
    <wingspan  unit="FT" >   35.14 </wingspan>
-   <wing_incidence>          5.00 </wing_incidence>
+   <wing_incidence>          2.80 </wing_incidence>
    <chord     unit="FT" >    2.91 </chord>
-   <htailarea unit="FT2">   12.56 </htailarea>
-   <htailarm  unit="FT" >   11.08 </htailarm>
-   <vtailarea unit="FT2">   13.03 </vtailarea>
+   <htailarea unit="FT2">   11.63 </htailarea>
+   <htailarm  unit="FT" >   11.09 </htailarm>
+   <vtailarea unit="FT2">   11.84 </vtailarea>
    <vtailarm  unit="FT" >   10.66 </vtailarm>
    <location name="AERORP" unit="IN">
-     <x> 122.75 </x>
+     <x> 122.84 </x>
      <y>   0.00 </y>
      <z>   0.00 </z>
    </location>
    <location name="EYEPOINT" unit="IN">
-     <x>  33.24 </x>
+     <x>  33.27 </x>
      <y> -18.00 </y>
      <z>  45.00 </z>
    </location>
@@ -66,21 +66,21 @@
 
  <mass_balance>
    <ixx unit="SLUG*FT2">       445 </ixx>
-   <iyy unit="SLUG*FT2">       291 </iyy>
-   <izz unit="SLUG*FT2">       695 </izz>
+   <iyy unit="SLUG*FT2">       292 </iyy>
+   <izz unit="SLUG*FT2">       696 </izz>
    <emptywt unit="LBS" >       637 </emptywt>
    <location name="CG" unit="IN">
-     <x> 122.75 </x>
+     <x> 122.84 </x>
      <y>   0.00 </y>
-     <z>  -6.39 </z>
+     <z>  -6.40 </z>
    </location>
    <pointmass name="Payload">
     <description> 490 LBS + full (196 LBS) fuel should bring model up to entered max weight</description>
     <weight unit="LBS">    245.0 </weight>
     <location name="POINTMASS" unit="IN">
-      <x> 122.75 </x>
+      <x> 122.84 </x>
       <y>   0.00 </y>
-      <z>  -6.39 </z>
+      <z>  -6.40 </z>
     </location>
   </pointmass> 
  </mass_balance>
@@ -89,9 +89,9 @@
 
   <contact type="BOGEY" name="NOSE">
    <location unit="IN">
-     <x>  33.24 </x>
+     <x>  33.27 </x>
      <y>   0.00 </y>
-     <z> -30.69 </z>
+     <z> -30.71 </z>
    </location>
    <static_friction>  0.80 </static_friction>
    <dynamic_friction> 0.50 </dynamic_friction>
@@ -105,9 +105,9 @@
 
   <contact type="BOGEY" name="LEFT_MAIN">
    <location unit="IN">
-     <x> 127.66 </x>
+     <x> 127.75 </x>
      <y> -37.95 </y>
-     <z> -30.69 </z>
+     <z> -30.71 </z>
    </location>
    <static_friction>  0.80 </static_friction>
    <dynamic_friction> 0.50 </dynamic_friction>
@@ -121,9 +121,9 @@
 
   <contact type="BOGEY" name="RIGHT_MAIN">
    <location unit="IN">
-     <x> 127.66 </x>
+     <x> 127.75 </x>
      <y>  37.95 </y>
-     <z> -30.69 </z>
+     <z> -30.71 </z>
    </location>
    <static_friction>  0.80 </static_friction>
    <dynamic_friction> 0.50 </dynamic_friction>
@@ -137,9 +137,9 @@
 
   <contact type="STRUCTURE" name="LEFT_WING">
     <location unit="IN">
-     <x> 122.75 </x>
+     <x> 122.84 </x>
      <y> -17.57 </y>
-     <z>  -6.39 </z>
+     <z>  -6.40 </z>
     </location>
     <static_friction>  1.00 </static_friction>
     <dynamic_friction> 1.00 </dynamic_friction>
@@ -149,9 +149,9 @@
 
   <contact type="STRUCTURE" name="RIGHT_WING">
     <location unit="IN">
-     <x> 122.75 </x>
+     <x> 122.84 </x>
      <y>  17.57 </y>
-     <z>  -6.39 </z>
+     <z>  -6.40 </z>
     </location>
     <static_friction>  1.00 </static_friction>
     <dynamic_friction> 1.00 </dynamic_friction>
@@ -192,9 +192,9 @@
 
   <tank type="FUEL" number="0">
      <location unit="IN">
-       <x> 122.75 </x>
+       <x> 122.84 </x>
        <y>   0.00 </y>
-       <z>  -6.39 </z>
+       <z>  -6.40 </z>
      </location>
      <capacity unit="LBS">  97.90 </capacity>
      <contents unit="LBS">  48.95 </contents>
@@ -202,9 +202,9 @@
 
   <tank type="FUEL" number="1">
      <location unit="IN">
-       <x> 122.75 </x>
+       <x> 122.84 </x>
        <y>   0.00 </y>
-       <z>  -6.39 </z>
+       <z>  -6.40 </z>
      </location>
      <capacity unit="LBS">  97.90 </capacity>
      <contents unit="LBS">  48.95 </contents>
@@ -212,7 +212,7 @@
 
  </propulsion>
 
- <flight_control name="FCS: pipistrel_virus_sw">
+ <flight_control name="FCS: virus-sw">
 
   <channel name="Pitch">
 
