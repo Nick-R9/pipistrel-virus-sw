@@ -19,11 +19,11 @@
   <ixx>   1.48 </ixx>
   <diameter unit="IN">  63.8 </diameter>
   <numblades> 2 </numblades>
-  <gearratio>  1.64 </gearratio>
+  <gearratio>  2.43 </gearratio>
   <p_factor>   5.04 </p_factor>
   <minpitch> 12 </minpitch>
   <maxpitch> 45 </maxpitch>
-  <minrpm>   3001 </minrpm>
+  <minrpm>   3000 </minrpm>
   <maxrpm>   3530 </maxrpm>
 
  <!-- thrust coefficient as a function of advance ratio and blade angle -->
