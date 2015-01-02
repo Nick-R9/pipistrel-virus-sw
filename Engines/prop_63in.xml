@@ -20,11 +20,11 @@
   <diameter unit="IN">  63.8 </diameter>
   <numblades> 2 </numblades>
   <gearratio>  2.43 </gearratio>
-  <p_factor>   5.04 </p_factor>
-  <minpitch> 12 </minpitch>
+  <p_factor>   5.16 </p_factor>
+  <minpitch> 3 </minpitch>
   <maxpitch> 45 </maxpitch>
-  <minrpm>   3000 </minrpm>
-  <maxrpm>   3530 </maxrpm>
+  <minrpm>   200 </minrpm>
+  <maxrpm>   2400 </maxrpm>
 
  <!-- thrust coefficient as a function of advance ratio and blade angle -->
   <table name="C_THRUST" type="internal">

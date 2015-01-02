@@ -13,21 +13,21 @@
 
 <piston_engine name="rotax912uls">
   <minmp unit="INHG">          6.0 </minmp>
-  <maxmp unit="INHG">         28.5 </maxmp>
-  <displacement unit="IN3"> 190.00 </displacement>
+  <maxmp unit="INHG">         27.5 </maxmp>
+  <displacement unit="IN3"> 72.00 </displacement>
   <maxhp>       100.00 </maxhp>
   <cycles>         4.0 </cycles>
-  <idlerpm>     2400.0 </idlerpm>
+  <idlerpm>     1400.0 </idlerpm>
   <maxrpm>      5800.0 </maxrpm>
   <maxthrottle>    1.0 </maxthrottle><!-- Deprecated -->
   <minthrottle>    0.1 </minthrottle><!-- Deprecated -->
   <sparkfaildrop>  0.1 </sparkfaildrop>
   <volumetric-efficiency> 0.85 </volumetric-efficiency>
-<!-- Optional items that affect engine performance -->
  <!-- Defining <bsfc> over-rides the built-in horsepower calculations -->
- <!--<bsfc>           0.45 </bsfc>-->
- <!--<stroke unit="IN">  4.375  </stroke>-->
- <!--<bore unit="IN">    5.125 </bore>-->
- <!--<cylinders>         4.0  </cylinders>-->
- <!--<compression-ratio> 8.0 </compression-ratio>-->
+  <!--<bsfc>           0.45 </bsfc>-->
+  <stroke unit="IN"> 2.4  </stroke>
+  <bore unit="IN"> 3.31 </bore>
+  <cylinders>      4.0  </cylinders>
+  <compression-ratio> 10.5  </compression-ratio>
+  <static-friction  unit="HP"> .5  </static-friction>
 </piston_engine>
