@@ -136,8 +136,8 @@
        <dep>5</dep>
      </entry>
      <entry>
-       <ind>0.2</ind>
-       <dep>-0</dep>
+       <ind>0.8</ind>
+       <dep>-12</dep>
      </entry>
    </interpolation>
     <center>
@@ -164,8 +164,8 @@
        <dep>-5</dep>
      </entry>
      <entry>
-       <ind>0.2</ind>
-       <dep>0</dep>
+       <ind>0.8</ind>
+       <dep>12</dep>
      </entry>
    </interpolation>
     <center>
