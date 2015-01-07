@@ -19,7 +19,7 @@
 
  <offsets> 
    <heading-deg>-90</heading-deg>
-   <z-m>0.27</z-m>
+   <z-m>0.25</z-m>
  </offsets>
 
 
@@ -38,7 +38,7 @@
       <object-name>fairing_left</object-name>
       <object-name>fairing_right</object-name>
       <object-name>floor</object-name>
-      <object-name>front_wheel</object-name>
+      <object-name>wheel_front</object-name>
       <object-name>fuslage</object-name>
       <object-name>glareshield</object-name>
       <object-name>prop</object-name>
@@ -124,6 +124,20 @@
  </animation>
 
 <!--Gear Animation-->
+ <animation>
+   <type>translate</type>
+   <object-name>w_shaft</object-name>
+   <object-name>fairing_front</object-name>
+   <object-name>wheel_front</object-name>
+   <property>gear/gear[0]/compression-norm</property>
+   <factor>0.30</factor>
+   <axis>
+     <x>0</x>
+     <y>0.522</y>
+     <z>1.0</z>
+   </axis>
+ </animation>
+
   <animation>
     <type>rotate</type>
     <object-name>strut_left</object-name>
@@ -136,7 +150,7 @@
        <dep>5</dep>
      </entry>
      <entry>
-       <ind>0.8</ind>
+       <ind>0.7</ind>
        <dep>-12</dep>
      </entry>
    </interpolation>
@@ -164,7 +178,7 @@
        <dep>-5</dep>
      </entry>
      <entry>
-       <ind>0.8</ind>
+       <ind>0.7</ind>
        <dep>12</dep>
      </entry>
    </interpolation>
@@ -179,5 +193,6 @@
       <z>0.0</z>
     </axis>
   </animation>
- 
+<!--End of Gear animation--> 
+
 </PropertyList>
