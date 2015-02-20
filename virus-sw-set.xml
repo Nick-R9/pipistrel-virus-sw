@@ -1,6 +1,6 @@
 <PropertyList>
  <sim>
-   <description>pipistrel virus sw</description>
+   <description>Pipistrel Virus SW</description>
    <aircraft-version>0.1</aircraft-version>
    <status>development</status>
    <author>Nick R</author>
@@ -9,7 +9,7 @@
 <!--   <startup>
 	<splash-texture>Aircraft/pipistrel-virus-sw/virus-sw splash.png</splash-texture>
    </startup>-->
-   <splash-title>pipistrel virus sw</splash-title>
+   <splash-title>Pipistrel Virus SW</splash-title>
    <model>
      <path>Aircraft/pipistrel-virus-sw/Models/virus-sw.xml</path>
        <livery>
