@@ -17,10 +17,10 @@
  </effect>
 
 
- <offsets> 
+<!-- <offsets> 
    <heading-deg>-90</heading-deg>
    <z-m>0.25</z-m>
- </offsets>
+ </offsets>-->
 
 
   
@@ -69,8 +69,8 @@
      <z-m>0</z-m>
    </center>
    <axis>
-     <x>0</x>
-     <y>1</y>
+     <x>1</x>
+     <y>0</y>
      <z>0</z>
    </axis>
  </animation>
@@ -117,14 +117,14 @@
      <z-m>0</z-m>
    </center>
    <axis>
-     <x>0</x>
-     <y>1</y>
+     <x>1</x>
+     <y>0</y>
      <z>0</z>
    </axis>
  </animation>
 
 <!--Gear Animation-->
- <animation>
+ <!--<animation>
    <type>translate</type>
    <object-name>w_shaft</object-name>
    <object-name>fairing_front</object-name>
@@ -192,7 +192,7 @@
       <y>1.0</y>
       <z>0.0</z>
     </axis>
-  </animation>
+  </animation>-->
 <!--End of Gear animation--> 
 
 </PropertyList>

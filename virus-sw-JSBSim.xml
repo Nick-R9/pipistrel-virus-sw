@@ -5,7 +5,7 @@
    xsi:noNamespaceSchemaLocation="http://jsbsim.sourceforge.net/JSBSim.xsd">
 
  <fileheader>
-  <author> Aeromatic v 0.95 </author>
+  <author> Aeromatic v 0.95, Nick Reimer </author>
   <filecreationdate>2015-01-01</filecreationdate>
   <version>$Revision: 1.15 $</version>
   <description> Models a Pipistrel Virus SW 100. </description>
@@ -48,14 +48,14 @@
    <vtailarea unit="FT2">   11.84 </vtailarea>
    <vtailarm  unit="FT" >   10.66 </vtailarm>
    <location name="AERORP" unit="IN">
-     <x> 122.84 </x>
+     <x>   5.84 </x>
      <y>   0.00 </y>
-     <z>   0.00 </z>
+     <z>  -5.19 </z>
    </location>
    <location name="EYEPOINT" unit="IN">
      <x>  33.27 </x>
      <y> -18.00 </y>
-     <z>  45.00 </z>
+     <z>  34.00 </z>
    </location>
    <location name="VRP" unit="IN">
      <x>0</x>
@@ -70,17 +70,17 @@
    <izz unit="SLUG*FT2">       696 </izz>
    <emptywt unit="LBS" >       637 </emptywt>
    <location name="CG" unit="IN">
-     <x> 122.84 </x>
+     <x>   5.84 </x>
      <y>   0.00 </y>
-     <z>  -6.40 </z>
+     <z>  -1.40 </z>
    </location>
    <pointmass name="Payload">
-    <description> 490 LBS + full (196 LBS) fuel should bring model up to entered max weight</description>
+    <description> 512 LBS + full (174 LBS) fuel should bring model up to entered max weight</description>
     <weight unit="LBS">    245.0 </weight>
     <location name="POINTMASS" unit="IN">
-      <x> 122.84 </x>
+      <x>   5.84 </x>
       <y>   0.00 </y>
-      <z>  -6.40 </z>
+      <z>  -5.19 </z>
     </location>
   </pointmass> 
  </mass_balance>
@@ -89,9 +89,9 @@
 
   <contact type="BOGEY" name="NOSE">
    <location unit="IN">
-     <x>  33.27 </x>
+     <x> -47.27 </x>
      <y>   0.00 </y>
-     <z> -30.71 </z>
+     <z> -41.71 </z>
    </location>
    <static_friction>  0.80 </static_friction>
    <dynamic_friction> 0.50 </dynamic_friction>
@@ -105,9 +105,9 @@
 
   <contact type="BOGEY" name="LEFT_MAIN">
    <location unit="IN">
-     <x> 127.75 </x>
+     <x>  10.75 </x>
      <y> -37.95 </y>
-     <z> -30.71 </z>
+     <z> -41.71 </z>
    </location>
    <static_friction>  0.80 </static_friction>
    <dynamic_friction> 0.50 </dynamic_friction>
@@ -121,9 +121,9 @@
 
   <contact type="BOGEY" name="RIGHT_MAIN">
    <location unit="IN">
-     <x> 127.75 </x>
+     <x>  10.75 </x>
      <y>  37.95 </y>
-     <z> -30.71 </z>
+     <z> -41.71 </z>
    </location>
    <static_friction>  0.80 </static_friction>
    <dynamic_friction> 0.50 </dynamic_friction>
@@ -137,9 +137,9 @@
 
   <contact type="STRUCTURE" name="LEFT_WING">
     <location unit="IN">
-     <x> 122.84 </x>
+     <x>   5.84 </x>
      <y> -17.57 </y>
-     <z>  -6.40 </z>
+     <z> -17.40 </z>
     </location>
     <static_friction>  1.00 </static_friction>
     <dynamic_friction> 1.00 </dynamic_friction>
@@ -149,9 +149,9 @@
 
   <contact type="STRUCTURE" name="RIGHT_WING">
     <location unit="IN">
-     <x> 122.84 </x>
+     <x>  5.84 </x>
      <y>  17.57 </y>
-     <z>  -6.40 </z>
+     <z> -17.40 </z>
     </location>
     <static_friction>  1.00 </static_friction>
     <dynamic_friction> 1.00 </dynamic_friction>
@@ -165,9 +165,9 @@
 
    <engine file="eng_rotax912uls">
     <location unit="IN">
-      <x>  36.00 </x>
+      <x> -81.00 </x>
       <y>   0.00 </y>
-      <z>   0.00 </z>
+      <z> -11.00 </z>
     </location>
     <orient unit="DEG">
       <pitch> 0.00 </pitch>
@@ -178,9 +178,9 @@
     <thruster file="prop_63in">
      <sense> 1 </sense>
      <location unit="IN">
-       <x>  36.00 </x>
+       <x> -81.00 </x>
        <y>   0.00 </y>
-       <z>   0.00 </z>
+       <z> -11.00 </z>
      </location>
      <orient unit="DEG">
        <pitch> 0.00 </pitch>
@@ -192,22 +192,22 @@
 
   <tank type="FUEL" number="0">
      <location unit="IN">
-       <x> 122.84 </x>
+       <x>   5.84 </x>
        <y>   0.00 </y>
-       <z>  -6.40 </z>
+       <z> -17.40 </z>
      </location>
-     <capacity unit="LBS">  97.90 </capacity>
-     <contents unit="LBS">  48.95 </contents>
+     <capacity unit="LBS">  86.95 </capacity>
+     <contents unit="LBS">  40.00 </contents>
   </tank>
 
   <tank type="FUEL" number="1">
      <location unit="IN">
-       <x> 122.84 </x>
+       <x>   5.84 </x>
        <y>   0.00 </y>
-       <z>  -6.40 </z>
+       <z> -17.40 </z>
      </location>
-     <capacity unit="LBS">  97.90 </capacity>
-     <contents unit="LBS">  48.95 </contents>
+     <capacity unit="LBS">  86.95 </capacity>
+     <contents unit="LBS">  40.00 </contents>
   </tank>
 
  </propulsion>
