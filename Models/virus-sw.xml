@@ -17,13 +17,6 @@
  </effect>
 
 
-<!-- <offsets> 
-   <heading-deg>-90</heading-deg>
-   <z-m>0.25</z-m>
- </offsets>-->
-
-
-  
 <!--  <animation>
     <condition>
         <not>
@@ -123,8 +116,8 @@
    </axis>
  </animation>
 
-<!--Gear Animation-->
- <!--<animation>
+<!-- gear compression animation  -->
+ <animation>
    <type>translate</type>
    <object-name>w_shaft</object-name>
    <object-name>fairing_front</object-name>
@@ -132,67 +125,56 @@
    <property>gear/gear[0]/compression-norm</property>
    <factor>0.30</factor>
    <axis>
-     <x>0</x>
-     <y>0.522</y>
-     <z>1.0</z>
+     <x> 0.522 </x>
+     <y> 0 </y>
+     <z> 1.0 </z>
    </axis>
  </animation>
 
   <animation>
     <type>rotate</type>
     <object-name>strut_left</object-name>
-    <object-name>wheel_left</object-name>
     <object-name>fairing_left</object-name>
-    <property>/gear/gear[1]/compression-norm</property>
-   <interpolation>
-     <entry>
-       <ind>0</ind>
-       <dep>5</dep>
-     </entry>
-     <entry>
-       <ind>0.7</ind>
-       <dep>-12</dep>
-     </entry>
-   </interpolation>
+    <object-name>wheel_left</object-name>
+    <property>gear/gear[1]/compression-norm</property>
+    <interpolation>
+      <entry><ind> 0 </ind><dep>  0 </dep></entry>
+      <entry><ind> 1 </ind><dep> 24 </dep></entry>
+    </interpolation>
     <center>
-      <x-m>0.30</x-m>
-      <y-m>0.33</y-m>
-      <z-m>-0.40</z-m>
+      <x-m>  0.274 </x-m>
+      <y-m> -0.300 </y-m>
+      <z-m> -0.460 </z-m>
     </center>
     <axis>
-      <x>0.0</x>
-      <y>1.0</y>
-      <z>0.0</z>
+      <x> -1 </x>
+      <y>  0 </y>
+      <z>  0 </z>
     </axis>
   </animation>
+
 
   <animation>
     <type>rotate</type>
     <object-name>strut_right</object-name>
-    <object-name>wheel_right</object-name>
     <object-name>fairing_right</object-name>
-    <property>/gear/gear[2]/compression-norm</property>
-   <interpolation>
-     <entry>
-       <ind>0</ind>
-       <dep>-5</dep>
-     </entry>
-     <entry>
-       <ind>0.7</ind>
-       <dep>12</dep>
-     </entry>
-   </interpolation>
+    <object-name>wheel_right</object-name>
+    <property>gear/gear[2]/compression-norm</property>
+    <interpolation>
+      <entry><ind> 0 </ind><dep>  0 </dep></entry>
+      <entry><ind> 1 </ind><dep> 24 </dep></entry>
+    </interpolation>
     <center>
-      <x-m>-0.30</x-m>
-      <y-m>0.33</y-m>
-      <z-m>-0.40</z-m>
+      <x-m>  0.274 </x-m>
+      <y-m>  0.300 </y-m>
+      <z-m> -0.460 </z-m>
     </center>
     <axis>
-      <x>0.0</x>
-      <y>1.0</y>
-      <z>0.0</z>
+      <x>  1 </x>
+      <y>  0 </y>
+      <z>  0 </z>
     </axis>
-  </animation>-->
-<!--End of Gear animation--> 
+  </animation>
+<!-- end of gear compression animation -->
 
 </PropertyList>
