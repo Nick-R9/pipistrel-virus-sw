@@ -25,13 +25,14 @@
     </condition>  
 
     <type>material</type> 
+      <object-name>aileron_left</object-name>
+      <object-name>aileron_right</object-name>
       <object-name>dashboard</object-name>
       <object-name>door</object-name>
       <object-name>fairing_front</object-name>
       <object-name>fairing_left</object-name>
       <object-name>fairing_right</object-name>
       <object-name>floor</object-name>
-      <object-name>wheel_front</object-name>
       <object-name>fuslage</object-name>
       <object-name>glareshield</object-name>
       <object-name>prop</object-name>
@@ -43,6 +44,7 @@
       <object-name>w_shaft</object-name>
       <object-name>wheel_left</object-name>
       <object-name>wheel_right</object-name>
+      <object-name>wheel_front</object-name>
       <object-name>window</object-name>
       <object-name>windshield</object-name>
 
@@ -116,6 +118,43 @@
    </axis>
  </animation>
 
+
+<!-- aileron animation -->
+ <animation>
+  <object-name>aileron_left</object-name>
+  <type>rotate</type>
+  <property>surface-positions/left-aileron-pos-norm</property>
+  <factor>25</factor>
+  <center>
+   <x-m> 0.73</x-m>
+   <y-m>-2.40</y-m>
+   <z-m> 0.50</z-m>
+  </center>
+  <axis>
+   <x> 0   </x>
+   <y> 1   </y>
+   <z>-0.03</z>
+  </axis>
+ </animation>
+ 
+  <animation>
+  <object-name>aileron_right</object-name>
+  <type>rotate</type>
+  <property>surface-positions/right-aileron-pos-norm</property>
+  <factor>25</factor>
+  <center>
+   <x-m> 0.73</x-m>
+   <y-m> 2.40</y-m>
+   <z-m> 0.50</z-m>
+  </center>
+  <axis>
+   <x> 0   </x>
+   <y>-1   </y>
+   <z>-0.03</z>
+  </axis>
+ </animation>
+<!-- end of aileron animation -->
+
 <!-- gear compression animation  -->
  <animation>
    <type>translate</type>
@@ -178,3 +217,13 @@
 <!-- end of gear compression animation -->
 
 </PropertyList>
+
+<!---
+0.019
+1
+-0.019
+
+x-1.74
+y90
+z-1.7
+-->
