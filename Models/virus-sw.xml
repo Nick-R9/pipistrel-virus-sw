@@ -37,6 +37,7 @@
       <object-name>glareshield</object-name>
       <object-name>prop</object-name>
       <object-name>prop_fast</object-name>
+      <object-name>rudder</object-name>
       <object-name>spinner</object-name>
       <object-name>strut_front</object-name>
       <object-name>strut_left</object-name>
@@ -52,7 +53,8 @@
     <texture-prop>texture</texture-prop>  
     <texture>Liveries/PVSWA.png</texture>
   </animation>-->
- 
+
+<!-- propeller animation -->
  <animation>
    <type>spin</type>
    <object-name>prop</object-name>
@@ -117,7 +119,7 @@
      <z>0</z>
    </axis>
  </animation>
-
+<!-- end of propeller animation -->
 
 <!-- aileron animation -->
  <animation>
@@ -154,6 +156,25 @@
   </axis>
  </animation>
 <!-- end of aileron animation -->
+
+<!-- rudder animation -->
+ <animation>
+     <type>rotate</type>
+     <object-name>rudder</object-name>
+     <property>surface-positions/rudder-pos-norm</property>
+     <factor>17.5</factor>
+     <center>
+         <x-m>4.39</x-m>
+         <y-m>0   </y-m>
+         <z-m>0.17</z-m>
+     </center>
+     <axis>
+         <x>0.25</x>
+         <y>0  </y>
+         <z>1  </z>
+     </axis>
+ </animation>
+<!-- end of rudder animation -->
 
 <!-- gear compression animation  -->
  <animation>
