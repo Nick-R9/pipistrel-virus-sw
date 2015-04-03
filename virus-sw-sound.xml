@@ -118,7 +118,44 @@
    </volume>
   </rumble>
 
-    
+  <squeal>
+   <name>squeal</name>
+   <path>Sounds/squeal.wav</path>
+   <condition>
+    <and>
+     <or>
+      <property>gear/gear[0]/wow</property>
+      <property>gear/gear[1]/wow</property>
+      <property>gear/gear[2]/wow</property>
+     </or>
+     <less-than>
+      <property>velocities/vertical-speed-fps</property>
+      <value>-0.05</value>
+     </less-than>
+    </and>
+   </condition>
+   <position>
+    <x>1.0</x>
+    <y>0.0</y>
+    <z>-1.5</z>
+   </position>
+   <volume>
+    <property>velocities/groundspeed-kt</property>
+    <factor>0.01</factor>
+    <max>1.0</max>
+   </volume>
+   <volume>
+    <internal>dt_stop</internal>
+    <factor>0.1</factor>
+    <max>1.0</max>
+   </volume>
+   <pitch>
+    <property>velocities/groundspeed-kt</property>
+    <factor>0.0025</factor>
+    <offset>1.2</offset>
+   </pitch>
+  </squeal>
+
     <flap>
       <name>flaps</name>
       <mode>in-transit</mode>
