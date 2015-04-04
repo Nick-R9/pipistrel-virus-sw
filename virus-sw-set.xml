@@ -53,7 +53,7 @@
             </config>
         </view>
         <sound>
-          <path>Aircraft/pipistrel-virus-sw/virus-sw-sound.xml</path>
+          <path>Aircraft/pipistrel-virus-sw/Sounds/virus-sw-sound.xml</path>
         </sound>
   <!-- <autopilot>
      <path>Aircraft/pipistrel-virus-sw/Dialogs/virus-sw-autopilot.xml</path>
