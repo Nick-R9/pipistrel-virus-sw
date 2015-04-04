@@ -48,9 +48,9 @@
    <vtailarea unit="FT2">   11.84 </vtailarea>
    <vtailarm  unit="FT" >   10.66 </vtailarm>
    <location name="AERORP" unit="IN">
-     <x>   5.84 </x>
+     <x>   5.00 </x>
      <y>   0.00 </y>
-     <z>  -5.19 </z>
+     <z>  16.14 </z>
    </location>
    <location name="EYEPOINT" unit="IN">
      <x>  33.27 </x>
@@ -70,17 +70,17 @@
    <izz unit="SLUG*FT2">       696 </izz>
    <emptywt unit="LBS" >       637 </emptywt>
    <location name="CG" unit="IN">
-     <x>   5.84 </x>
+     <x>   0.00 </x>
      <y>   0.00 </y>
-     <z>  -1.40 </z>
+     <z>   0.00 </z>
    </location>
    <pointmass name="Payload">
     <description> 512 LBS + full (174 LBS) fuel should bring model up to entered max weight</description>
     <weight unit="LBS">    245.0 </weight>
     <location name="POINTMASS" unit="IN">
-      <x>   5.84 </x>
+      <x>   0.00 </x>
       <y>   0.00 </y>
-      <z>  -5.19 </z>
+      <z>   0.00 </z>
     </location>
   </pointmass> 
  </mass_balance>
@@ -93,12 +93,12 @@
      <y>   0.00 </y>
      <z> -41.71 </z>
    </location>
-   <static_friction>  0.80 </static_friction>
-   <dynamic_friction> 0.50 </dynamic_friction>
+   <static_friction>  0.90 </static_friction>
+   <dynamic_friction> 0.70 </dynamic_friction>
    <rolling_friction> 0.02 </rolling_friction>
    <spring_coeff unit="LBS/FT">       1396.90 </spring_coeff>
    <damping_coeff unit="LBS/FT/SEC">   661.50 </damping_coeff>
-   <max_steer unit="DEG"> 5.00 </max_steer>
+   <max_steer unit="DEG"> 15.00 </max_steer>
    <brake_group>NONE</brake_group>
    <retractable>0</retractable>
   </contact>
