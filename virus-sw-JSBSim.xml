@@ -208,8 +208,8 @@
   <tank type="FUEL" number="0">
      <location unit="IN">
        <x>   5.84 </x>
-       <y>   0.00 </y>
-       <z> -17.40 </z>
+       <y> -30.00 </y>
+       <z>  18.70 </z>
      </location>
      <capacity unit="LBS">  86.95 </capacity>
      <contents unit="LBS">  40.00 </contents>
@@ -218,8 +218,8 @@
   <tank type="FUEL" number="1">
      <location unit="IN">
        <x>   5.84 </x>
-       <y>   0.00 </y>
-       <z> -17.40 </z>
+       <y>  30.00 </y>
+       <z>  18.70 </z>
      </location>
      <capacity unit="LBS">  86.95 </capacity>
      <contents unit="LBS">  40.00 </contents>

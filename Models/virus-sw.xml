@@ -277,4 +277,28 @@
   </animation>
 <!-- end of gear compression animation -->
 
+<!-- door animation -->
+ <animation>
+  <type>rotate</type>
+  <object-name>window_left</object-name>
+  <object-name>door_left</object-name>
+  <property>/door1/position-norm</property>
+  <interpolation>
+    <entry><ind> 0 </ind><dep>  0 </dep></entry>
+    <entry><ind>0.4</ind><dep> 10 </dep></entry>
+    <entry><ind> 1 </ind><dep> 90 </dep></entry>
+  </interpolation>
+  <center>
+   <x-m>  0.22 </x-m>
+   <y-m> -0.49 </y-m>
+   <z-m>  0.40 </z-m>
+  </center>
+  <axis>
+   <x>-1</x>
+   <y>0</y>
+   <z>0.12</z>
+  </axis>
+ </animation>
+<!-- end of door animation -->
+
 </PropertyList>

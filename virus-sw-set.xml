@@ -120,8 +120,21 @@
     </binding>
    </mod-up>
   </key>
+      <key n="100">
+        <name>d</name>
+        <desc>Canopy</desc>
+        <binding>
+          <command>nasal</command>
+          <script>virus.door1.toggle();</script>
+        </binding>
+      </key>
   </keyboard> 
  </input>
 
+  <nasal>
+    <virus>
+      <file>Aircraft/pipistrel-virus-sw/Nasal/virus.nas</file>
+    </virus>
+  </nasal>
  
 </PropertyList>
