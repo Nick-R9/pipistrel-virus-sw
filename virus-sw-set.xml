@@ -17,15 +17,11 @@
        </livery>
    </model>
    
-   
-   
-   <nasal>
+   <!--   <nasal>
     <ELT>
       <file>YOUR/INSTRUMENT/FOLDER/ROUTE/HERE/ELTmessage.nas</file>
     </ELT>
-  </nasal>
-
-
+  </nasal>-->
 
         <view n="0">
             <name>Pilot</name>
