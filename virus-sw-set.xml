@@ -77,7 +77,7 @@
     <magnetos type="int">3</magnetos>
     <master-bat type="bool">true</master-bat>
     <master-alt type="bool">true</master-alt>
-    <propeller-pitch>0.0</propeller-pitch>
+    <propeller-pitch>1.0</propeller-pitch>
    </engine>
   </engines>
   
