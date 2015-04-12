@@ -39,6 +39,9 @@
       <object-name>prop</object-name>
       <object-name>prop_fast</object-name>
       <object-name>rudder</object-name>
+      <object-name>speedbrake</object-name>
+      <object-name>speedbrake_shaft</object-name>
+      <object-name>speedbrake_shaft1</object-name>
       <object-name>spinner</object-name>
       <object-name>strut_front</object-name>
       <object-name>strut_left</object-name>
