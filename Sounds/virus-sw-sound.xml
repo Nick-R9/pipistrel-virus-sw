@@ -44,7 +44,7 @@
       <property>/engines/engine/running</property>
       <volume>
         <property>/engines/engine/mp-osi</property>
-        <factor>0.00375</factor>
+        <factor>0.00475</factor>
         <min>0.15</min>
         <max>0.5</max>
       </volume>
@@ -61,7 +61,7 @@
       </volume>
       <pitch>
         <property>/engines/engine/rpm</property>
-        <factor>0.00025</factor>
+        <factor>0.00028</factor>
         <min>0.3</min>
         <max>2.0</max>
         <offset>0.15</offset>
