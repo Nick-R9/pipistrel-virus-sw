@@ -8,6 +8,9 @@
  <effect>
     <inherits-from>Effects/model-transparent</inherits-from>
     <object-name>windshield</object-name>
+    <object-name>window_left</object-name>
+    <object-name>window_right</object-name>
+    <object-name>sun_roof</object-name>
  </effect>
  
  
@@ -39,19 +42,24 @@
       <object-name>prop</object-name>
       <object-name>prop_fast</object-name>
       <object-name>rudder</object-name>
-      <object-name>speedbrake</object-name>
-      <object-name>speedbrake_shaft</object-name>
-      <object-name>speedbrake_shaft1</object-name>
       <object-name>spinner</object-name>
+      <object-name>spoiler_left</object-name>
+      <object-name>spoiler_right</object-name>
+      <object-name>spoiler_shaft_left</object-name>
+      <object-name>spoiler_shaft_right</object-name>
+      <object-name>spoiler_shaft1_left</object-name>
+      <object-name>spoiler_shaft1_right</object-name>
       <object-name>strut_front</object-name>
       <object-name>strut_left</object-name>
       <object-name>strut_right</object-name>
+      <object-name>sun_roof</object-name>
       <object-name>w_shaft</object-name>
       <object-name>wheel_left</object-name>
       <object-name>wheel_right</object-name>
       <object-name>wheel_front</object-name>
-      <object-name>window</object-name>
       <object-name>windshield</object-name>
+      <object-name>window_left</object-name>
+      <object-name>window_right</object-name>
 
     <property-base>sim/model/livery/</property-base> 
     <texture-prop>texture</texture-prop>  
@@ -160,6 +168,108 @@
   </axis>
  </animation>
 <!-- end of aileron animation -->
+
+<!-- spoiler animation -->
+ <animation>
+   <type>rotate</type>
+   <object-name>spoiler_shaft_left</object-name>
+   <object-name>spoiler_left</object-name>
+   <property>surface-positions/speedbrake-pos-norm</property>
+   <factor>45</factor>
+   <center>
+     <x-m> 0.5000</x-m>
+     <y-m>-2.7590</y-m>
+     <z-m> 0.5544</z-m>
+   </center>
+   <axis>
+     <x>-1</x>
+     <y>0</y>
+     <z>0.52</z>
+   </axis>
+ </animation>
+ <animation>
+   <type>rotate</type>
+   <object-name>spoiler_shaft1_left</object-name>
+   <property>surface-positions/speedbrake-pos-norm</property>
+   <factor>45</factor>
+   <center>
+     <x-m> 0.5012</x-m>
+     <y-m>-2.0496</y-m>
+     <z-m> 0.5291</z-m>
+   </center>
+   <axis>
+     <x>-1</x>
+     <y>0</y>
+     <z>0.52</z>
+   </axis>
+ </animation>
+ <animation>
+   <type>rotate</type>
+   <object-name>spoiler_left</object-name>
+   <property>surface-positions/speedbrake-pos-norm</property>
+   <factor>45</factor>
+   <center>
+     <x-m> 0.5140</x-m>
+     <y-m>-2.8803</y-m>
+     <z-m> 0.5825</z-m>
+   </center>
+   <axis>
+     <x>1</x>
+     <y>0</y>
+     <z>-0.52</z>
+   </axis>
+ </animation>
+
+ <animation>
+   <type>rotate</type>
+   <object-name>spoiler_shaft_right</object-name>
+   <object-name>spoiler_right</object-name>
+   <property>surface-positions/speedbrake-pos-norm</property>
+   <factor>45</factor>
+   <center>
+     <x-m> 0.5000</x-m>
+     <y-m> 2.7590</y-m>
+     <z-m> 0.5544</z-m>
+   </center>
+   <axis>
+     <x>1</x>
+     <y>0</y>
+     <z>-0.52</z>
+   </axis>
+ </animation>
+ <animation>
+   <type>rotate</type>
+   <object-name>spoiler_shaft1_right</object-name>
+   <property>surface-positions/speedbrake-pos-norm</property>
+   <factor>45</factor>
+   <center>
+     <x-m> 0.5012</x-m>
+     <y-m> 2.0496</y-m>
+     <z-m> 0.5291</z-m>
+   </center>
+   <axis>
+     <x>1</x>
+     <y>0</y>
+     <z>-0.52</z>
+   </axis>
+ </animation>
+ <animation>
+   <type>rotate</type>
+   <object-name>spoiler_right</object-name>
+   <property>surface-positions/speedbrake-pos-norm</property>
+   <factor>45</factor>
+   <center>
+     <x-m> 0.5140</x-m>
+     <y-m> 2.8803</y-m>
+     <z-m> 0.5825</z-m>
+   </center>
+   <axis>
+     <x>-1</x>
+     <y>0</y>
+     <z>0.52</z>
+   </axis>
+ </animation>
+<!-- end of spoiler animation -->
 
 <!-- rudder animation -->
  <animation>
