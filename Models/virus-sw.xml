@@ -174,7 +174,7 @@
    <type>rotate</type>
    <object-name>spoiler_shaft_left</object-name>
    <object-name>spoiler_left</object-name>
-   <property>surface-positions/speedbrake-pos-norm</property>
+   <property>surface-positions/spoilers-pos-norm</property>
    <factor>45</factor>
    <center>
      <x-m> 0.5000</x-m>
@@ -190,7 +190,7 @@
  <animation>
    <type>rotate</type>
    <object-name>spoiler_shaft1_left</object-name>
-   <property>surface-positions/speedbrake-pos-norm</property>
+   <property>surface-positions/spoilers-pos-norm</property>
    <factor>45</factor>
    <center>
      <x-m> 0.5012</x-m>
@@ -206,7 +206,7 @@
  <animation>
    <type>rotate</type>
    <object-name>spoiler_left</object-name>
-   <property>surface-positions/speedbrake-pos-norm</property>
+   <property>surface-positions/spoilers-pos-norm</property>
    <factor>45</factor>
    <center>
      <x-m> 0.5140</x-m>
@@ -224,7 +224,7 @@
    <type>rotate</type>
    <object-name>spoiler_shaft_right</object-name>
    <object-name>spoiler_right</object-name>
-   <property>surface-positions/speedbrake-pos-norm</property>
+   <property>surface-positions/spoilers-pos-norm</property>
    <factor>45</factor>
    <center>
      <x-m> 0.5000</x-m>
@@ -240,7 +240,7 @@
  <animation>
    <type>rotate</type>
    <object-name>spoiler_shaft1_right</object-name>
-   <property>surface-positions/speedbrake-pos-norm</property>
+   <property>surface-positions/spoilers-pos-norm</property>
    <factor>45</factor>
    <center>
      <x-m> 0.5012</x-m>
@@ -256,7 +256,7 @@
  <animation>
    <type>rotate</type>
    <object-name>spoiler_right</object-name>
-   <property>surface-positions/speedbrake-pos-norm</property>
+   <property>surface-positions/spoilers-pos-norm</property>
    <factor>45</factor>
    <center>
      <x-m> 0.5140</x-m>

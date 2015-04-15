@@ -105,65 +105,65 @@
   </propeller>
 
   <rumble>
-   <name>rumble</name>
-   <mode>looped</mode>
-   <path>Sounds/rumble.wav</path>
-   <condition>
+  <name>rumble</name>
+  <mode>looped</mode>
+  <path>Sounds/rumble.wav</path>
+  <condition>
     <or>
-     <property>gear/gear[0]/wow</property>
-     <property>gear/gear[1]/wow</property>
-     <property>gear/gear[2]/wow</property>
+    <property>gear/gear[0]/wow</property>
+    <property>gear/gear[1]/wow</property>
+    <property>gear/gear[2]/wow</property>
     </or>
     <!-- <property>sim/current-view/internal</property> -->
-   </condition>
-   <position>
+  </condition>
+  <position>
     <x>1.0</x>
     <y>0.0</y>
     <z>-1.5</z>
-   </position>
-   <volume>
+  </position>
+  <volume>
     <property>velocities/groundspeed-kt</property>
     <type>log</type>
     <factor>0.75</factor>
-   </volume>
+  </volume>
   </rumble>
 
   <squeal>
-   <name>squeal</name>
-   <path>Sounds/squeal.wav</path>
-   <condition>
+  <name>squeal</name>
+  <path>Sounds/squeal.wav</path>
+  <condition>
     <and>
-     <or>
+    <or>
       <property>gear/gear[0]/wow</property>
       <property>gear/gear[1]/wow</property>
       <property>gear/gear[2]/wow</property>
-     </or>
-     <less-than>
+    </or>
+    <less-than>
       <property>velocities/vertical-speed-fps</property>
       <value>-0.05</value>
-     </less-than>
+    </less-than>
     </and>
-   </condition>
-   <position>
+  </condition>
+  <position>
     <x>1.0</x>
     <y>0.0</y>
     <z>-1.5</z>
-   </position>
-   <volume>
+  </position>
+  <volume>
     <property>velocities/groundspeed-kt</property>
     <factor>0.01</factor>
     <max>1.0</max>
-   </volume>
-   <volume>
+  </volume>
+  <volume>
     <internal>dt_stop</internal>
     <factor>0.1</factor>
     <max>1.0</max>
-   </volume>
-   <pitch>
+  </volume>
+  <pitch>
     <property>velocities/groundspeed-kt</property>
     <factor>0.0025</factor>
     <offset>1.2</offset>
-   </pitch>
+  </pitch>
   </squeal>
 
     <flap>
@@ -213,7 +213,7 @@
         <and>
           <property>sim/current-view/internal</property>
           <greater-than>
-	    <property>velocities/airspeed-kt</property>
+            <property>velocities/airspeed-kt</property>
             <value>10</value>
           </greater-than>
           <not>
@@ -250,12 +250,12 @@
         <max>0.8</max>
       </volume>
       <volume>
-	<property>sim/current-view/internal</property>
+        <property>sim/current-view/internal</property>
         <factor>0.3</factor>
         <min>0.5</min>
       </volume>
       <pitch>
-	<property>sim/current-view/internal</property>
+        <property>sim/current-view/internal</property>
         <factor>0.5</factor>
       </pitch>
     </rain>
