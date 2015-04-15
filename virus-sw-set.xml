@@ -48,6 +48,19 @@
         </limits>
       </config>
     </view>
+    <view>
+      <name>Test View</name>
+      <type>lookfrom</type>
+      <internal type="bool">false</internal>
+      <config>
+        <from-model type="bool">true</from-model>
+        <from-model-idx type="int">0</from-model-idx>
+
+        <z-offset-m type="double">1.5528</z-offset-m> <!--x in blender-->
+        <x-offset-m type="double">-4.0307</x-offset-m> <!--y in blender-->
+        <y-offset-m type="double">0.6755</y-offset-m> <!--z in blender-->
+      </config>
+    </view>
     <sound>
       <path>Aircraft/pipistrel-virus-sw/Sounds/virus-sw-sound.xml</path>
     </sound>
