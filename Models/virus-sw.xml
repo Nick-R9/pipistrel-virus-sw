@@ -152,8 +152,8 @@
  </animation>
  
   <animation>
-  <object-name>aileron_right</object-name>
   <type>rotate</type>
+  <object-name>aileron_right</object-name>
   <property>surface-positions/right-aileron-pos-norm</property>
   <factor>25</factor>
   <center>
@@ -168,6 +168,42 @@
   </axis>
  </animation>
 <!-- end of aileron animation -->
+ 
+<!-- flap animation -->
+ <animation>
+   <type>rotate</type>
+   <object-name>aileron_left</object-name>
+   <property>surface-positions/flap-pos-norm</property>
+   <factor>19</factor>
+   <center>
+     <x-m> 0.73</x-m>
+     <y-m>-2.40</y-m>
+     <z-m> 0.50</z-m>
+     </center>
+   <axis>
+     <x> 0   </x>
+     <y> 1   </y>
+     <z>-0.03</z>
+   </axis>
+ </animation>
+
+ <animation>
+   <type>rotate</type>
+   <object-name>aileron_right</object-name>
+   <property>surface-positions/flap-pos-norm</property>
+   <factor>19</factor>
+  <center>
+    <x-m> 0.73</x-m>
+    <y-m> 2.40</y-m>
+    <z-m> 0.50</z-m>
+  </center>
+  <axis>
+    <x> 0   </x>
+    <y> 1   </y>
+    <z> 0.03</z>
+  </axis>
+ </animation> 
+<!-- end of flap animation -->
 
 <!-- spoiler animation -->
  <animation>
