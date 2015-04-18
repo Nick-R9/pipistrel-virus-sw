@@ -362,19 +362,19 @@
     <traverse>
       <setting>
           <position> -5 </position>
-          <time>     0.9 </time>
+          <time>    0.9 </time>
       </setting>
       <setting>
           <position>  0 </position>
-          <time>     0.9</time>
+          <time>    0.9 </time>
       </setting>
       <setting>
           <position>  9 </position>
-          <time>     0.9</time>
+          <time>    0.9 </time>
       </setting>
       <setting>
           <position> 19 </position>
-          <time>     0.9</time>
+          <time>    0.9 </time>
       </setting>
     </traverse>
     <output>fcs/flap-pos-deg</output>

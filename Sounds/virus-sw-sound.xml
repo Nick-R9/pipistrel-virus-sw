@@ -186,7 +186,7 @@
       <property>/surface-positions/flap-pos-norm</property>
       <volume>
         <property>sim/current-view/internal</property>
-        <offset>1</offset>
+        <offset>0.4</offset>
         <factor>-1</factor>
       </volume>
       <reference-dist>60.0</reference-dist>
