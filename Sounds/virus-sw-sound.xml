@@ -166,17 +166,32 @@
   </pitch>
   </squeal>
 
-    <flap>
-      <name>flaps</name>
+    <flaps_internal>
+      <name>flaps_internal</name>
       <mode>in-transit</mode>
-      <path>Sounds/flaps.wav</path>
+      <path>Sounds/flaps_internal.wav</path>
       <property>/surface-positions/flap-pos-norm</property>
       <volume>
+        <property>sim/current-view/internal</property>
         <factor>0.8</factor>
       </volume>
       <reference-dist>60.0</reference-dist>
       <max-dist>2000.0</max-dist>
-    </flap>
+    </flaps_internal>
+
+    <flaps_external>
+      <name>flaps_external</name>
+      <mode>in-transit</mode>
+      <path>Sounds/flaps_external.wav</path>
+      <property>/surface-positions/flap-pos-norm</property>
+      <volume>
+        <property>sim/current-view/internal</property>
+        <offset>1</offset>
+        <factor>-1</factor>
+      </volume>
+      <reference-dist>60.0</reference-dist>
+      <max-dist>2000.0</max-dist>
+    </flaps_external>
 
     <wind>
       <name>wind</name>
