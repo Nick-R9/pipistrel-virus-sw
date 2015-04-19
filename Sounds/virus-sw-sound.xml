@@ -114,7 +114,7 @@
     <property>gear/gear[1]/wow</property>
     <property>gear/gear[2]/wow</property>
     </or>
-    <!-- <property>sim/current-view/internal</property> -->
+    <property>sim/current-view/internal</property>
   </condition>
   <position>
     <x>1.0</x>
@@ -173,8 +173,14 @@
       <property>/surface-positions/flap-pos-norm</property>
       <volume>
         <property>sim/current-view/internal</property>
-        <factor>0.8</factor>
+        <offset>0.4</offset>
+        <factor>0.4</factor>
       </volume>
+      <position>
+        <x> 0.37</x>
+        <y> 0.0</y>
+        <z>-0.23</z>
+      </position>
       <reference-dist>60.0</reference-dist>
       <max-dist>2000.0</max-dist>
     </flaps_internal>
@@ -186,9 +192,14 @@
       <property>/surface-positions/flap-pos-norm</property>
       <volume>
         <property>sim/current-view/internal</property>
-        <offset>0.4</offset>
-        <factor>-1</factor>
+        <offset>0.8</offset>
+        <factor>-0.4</factor>
       </volume>
+      <position>
+        <x> 0.50</x>
+        <y> 0.00</y>
+        <z> 0.52</z>
+      </position>
       <reference-dist>60.0</reference-dist>
       <max-dist>2000.0</max-dist>
     </flaps_external>
