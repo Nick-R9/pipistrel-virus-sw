@@ -43,6 +43,9 @@
       <object-name>prop_fast</object-name>
       <object-name>rudder</object-name>
       <object-name>seats</object-name>
+      <object-name>stick</object-name>
+      <object-name>stick_handle</object-name>
+      <object-name>stick_cover</object-name>
       <object-name>spinner</object-name>
       <object-name>spoiler_left</object-name>
       <object-name>spoiler_right</object-name>
