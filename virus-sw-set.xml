@@ -29,9 +29,9 @@
       <internal type="bool">true</internal>
       <config>
         <ground-level-nearplane-m type="double">0.5f</ground-level-nearplane-m>
-        <x-offset-m type="double">-0.20</x-offset-m>
-        <y-offset-m type="double">0.40</y-offset-m>
-        <z-offset-m type="double">0.35</z-offset-m>
+        <z-offset-m type="double">0.38</z-offset-m> <!--x in blender-->
+        <x-offset-m type="double">-0.27</x-offset-m> <!--y in blender-->
+        <y-offset-m type="double">0.33</y-offset-m> <!--z in blender-->
         <pitch-offset-deg>0</pitch-offset-deg>
         <limits>
           <enabled type="bool">false</enabled>
