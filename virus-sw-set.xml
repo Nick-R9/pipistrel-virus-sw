@@ -32,20 +32,7 @@
         <z-offset-m type="double">0.38</z-offset-m> <!--x in blender-->
         <x-offset-m type="double">-0.27</x-offset-m> <!--y in blender-->
         <y-offset-m type="double">0.33</y-offset-m> <!--z in blender-->
-        <pitch-offset-deg>0</pitch-offset-deg>
-        <limits>
-          <enabled type="bool">false</enabled>
-          <left>
-            <heading-max-deg type="double">120</heading-max-deg>
-            <x-offset-max-m type="double">0.10</x-offset-max-m>
-            <x-offset-threshold-deg type="double">45</x-offset-threshold-deg>
-          </left>
-          <right>
-            <heading-max-deg type="double">160</heading-max-deg>
-            <x-offset-max-m type="double">0.20</x-offset-max-m>
-            <x-offset-threshold-deg type="double">65</x-offset-threshold-deg>
-          </right>
-        </limits>
+        <default-field-of-view-deg type="double">70.0</default-field-of-view-deg>
       </config>
     </view>
     <view>
