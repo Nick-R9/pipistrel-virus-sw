@@ -43,9 +43,9 @@
       <object-name>prop_fast</object-name>
       <object-name>rudder</object-name>
       <object-name>seats</object-name>
-      <object-name>stick</object-name>
-      <object-name>stick_handle</object-name>
-      <object-name>stick_cover</object-name>
+      <object-name>stick_left</object-name>
+      <object-name>stick_handle_left</object-name>
+      <object-name>stick_cover_left</object-name>
       <object-name>spinner</object-name>
       <object-name>spoiler_left</object-name>
       <object-name>spoiler_right</object-name>
@@ -369,6 +369,148 @@
  </animation>
 <!-- end of elevator animation -->
 
+<!-- control stick animation -->
+  <animation>
+   <type>rotate</type>
+   <object-name>stick_left</object-name>
+   <object-name>stick_handle_left</object-name>
+   <property>surface-positions/elevator-pos-norm</property>
+   <factor>25</factor>
+    <center>
+      <x-m>  -0.195 </x-m>
+      <y-m>  -0.225 </y-m>
+      <z-m>  -0.341 </z-m>
+    </center>
+    <axis>
+      <x>  0 </x>
+      <y> -1 </y>
+      <z>  0 </z>
+    </axis>
+ </animation>
+ 
+  <animation>
+   <type>rotate</type>
+   <object-name>stick_cover2_left</object-name>
+   <property>surface-positions/elevator-pos-norm</property>
+   <factor>10</factor>
+    <center>
+      <x-m>  -0.195 </x-m>
+      <y-m>  -0.225 </y-m>
+      <z-m>  -0.450 </z-m>
+    </center>
+    <axis>
+      <x>  0 </x>
+      <y> -1 </y>
+      <z>  0 </z>
+    </axis>
+ </animation>
+
+  <animation>
+   <type>rotate</type>
+   <object-name>stick_left</object-name>
+   <object-name>stick_handle_left</object-name>
+   <property>surface-positions/left-aileron-pos-norm</property>
+   <factor>25</factor>
+    <center>
+      <x-m>  -0.195 </x-m>
+      <y-m>  -0.225 </y-m>
+      <z-m>  -0.341 </z-m>
+    </center>
+    <axis>
+      <x> -1 </x>
+      <y>  0 </y>
+      <z>  0 </z>
+    </axis>
+  </animation>
+ 
+  <animation>
+   <type>rotate</type>
+   <object-name>stick_cover2_left</object-name>
+   <property>surface-positions/left-aileron-pos-norm</property>
+   <factor>10</factor>
+    <center>
+      <x-m>  -0.195 </x-m>
+      <y-m>  -0.225 </y-m>
+      <z-m>  -0.450 </z-m>
+    </center>
+    <axis>
+      <x> -1 </x>
+      <y>  0 </y>
+      <z>  0 </z>
+    </axis>
+  </animation>
+
+  <animation>
+   <type>rotate</type>
+   <object-name>stick_right</object-name>
+   <object-name>stick_handle_right</object-name>
+   <property>surface-positions/elevator-pos-norm</property>
+   <factor>25</factor>
+    <center>
+      <x-m>  -0.195 </x-m>
+      <y-m>   0.225 </y-m>
+      <z-m>  -0.341 </z-m>
+    </center>
+    <axis>
+      <x>  0 </x>
+      <y> -1 </y>
+      <z>  0 </z>
+    </axis>
+ </animation>
+
+  <animation>
+   <type>rotate</type>
+   <object-name>stick_cover2_right</object-name>
+   <property>surface-positions/elevator-pos-norm</property>
+   <factor>10</factor>
+    <center>
+      <x-m>  -0.195 </x-m>
+      <y-m>   0.225 </y-m>
+      <z-m>  -0.450 </z-m>
+    </center>
+    <axis>
+      <x>  0 </x>
+      <y> -1 </y>
+      <z>  0 </z>
+    </axis>
+ </animation>
+
+  <animation>
+   <type>rotate</type>
+   <object-name>stick_right</object-name>
+   <object-name>stick_handle_right</object-name>
+   <property>surface-positions/left-aileron-pos-norm</property>
+   <factor>25</factor>
+    <center>
+      <x-m>  -0.195 </x-m>
+      <y-m>   0.225 </y-m>
+      <z-m>  -0.341 </z-m>
+    </center>
+    <axis>
+      <x> -1 </x>
+      <y>  0 </y>
+      <z>  0 </z>
+    </axis>
+ </animation>
+
+  <animation>
+   <type>rotate</type>
+   <object-name>stick_cover2_right</object-name>
+   <property>surface-positions/left-aileron-pos-norm</property>
+   <factor>10</factor>
+    <center>
+      <x-m>  -0.195 </x-m>
+      <y-m>   0.225 </y-m>
+      <z-m>  -0.450 </z-m>
+    </center>
+    <axis>
+      <x> -1 </x>
+      <y>  0 </y>
+      <z>  0 </z>
+    </axis>
+ </animation>
+<!-- end of control stick animation -->
+
 <!-- gear compression animation  -->
  <animation>
    <type>translate</type>
@@ -453,5 +595,15 @@
   </axis>
  </animation>
 <!-- end of door animation -->
+
+ <model>
+  <name>ALT</name>
+  <path>Aircraft/Instruments-3d/alt-2/alt2.xml</path>
+  <offsets>
+   <x-m>-0.385</x-m>
+   <y-m>0.15</y-m>
+   <z-m>0.23</z-m>
+  </offsets>
+ </model>
 
 </PropertyList>
