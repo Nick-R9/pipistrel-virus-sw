@@ -15,9 +15,24 @@
     <model>
       <path>Aircraft/pipistrel-virus-sw/Models/virus-sw.xml</path>
       <livery>
-        <file type="string" />
+        <file type="string">PPSWA</file>
       </livery>
     </model>
+    <menubar>
+      <default>
+        <menu n="100">
+          <label>virus-sw</label>
+          <enabled type="bool">true</enabled>
+          <item>
+            <label>Select Livery</label>
+            <binding>
+              <command>nasal</command>
+              <script>aircraft.livery.dialog.open();</script>
+            </binding>
+          </item>
+        </menu>
+      </default>
+    </menubar>
     <!--   <nasal>
     <ELT>
       <file>YOUR/INSTRUMENT/FOLDER/ROUTE/HERE/ELTmessage.nas</file>
@@ -106,6 +121,7 @@
   <nasal>
     <virus>
       <file>Aircraft/pipistrel-virus-sw/Nasal/virus.nas</file>
+      <file>Aircraft/pipistrel-virus-sw/Nasal/liveries.nas</file>
     </virus>
   </nasal>
 

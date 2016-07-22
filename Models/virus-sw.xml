@@ -3,6 +3,37 @@
 
  
   <path>virus-sw.ac</path>
+  
+
+
+  <nasal>
+    <load>
+      <!--
+      ##############################################################################
+      # The on-load Nasal is not executed when this file is loaded as the user
+      # aircraft. The code is only executed if the file is loaded for a remote
+      # aircraft in Multi-Player mode (MP)
+      ##############################################################################
+      -->
+      <![CDATA[
+      var livery_update = aircraft.livery_update.new("Aircraft/pipistrel-virus-sw/Models/Liveries");
+      ]]>
+    </load>
+
+    <unload><![CDATA[
+      livery_update.stop();
+    ]]></unload>
+  </nasal>
+  
+<animation>
+  <type>material</type>
+  <object-name>fuselage</object-name>
+  <object-name>aileron_left</object-name>
+  <object-name>aileron_right</object-name>
+  <property-base>sim/model/livery</property-base>
+  <texture-prop>texture</texture-prop>
+  <texture>Liveries/PPSWA/fuselage.PPSWA.png</texture>
+</animation>
 
 
   <effect>
