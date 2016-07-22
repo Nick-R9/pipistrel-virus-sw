@@ -25,15 +25,15 @@
     ]]></unload>
   </nasal>
   
-<animation>
-  <type>material</type>
-  <object-name>fuselage</object-name>
-  <object-name>aileron_left</object-name>
-  <object-name>aileron_right</object-name>
-  <property-base>sim/model/livery</property-base>
-  <texture-prop>texture</texture-prop>
-  <texture>Liveries/PPSWA/fuselage.PPSWA.png</texture>
-</animation>
+  <animation>
+    <type>material</type>
+    <object-name>fuselage</object-name>
+    <object-name>aileron_left</object-name>
+    <object-name>aileron_right</object-name>
+    <property-base>sim/model/livery</property-base>
+    <texture-prop>texture</texture-prop>
+    <texture>Liveries/PPSWA/fuselage.PPSWA.png</texture>
+  </animation>
 
 
   <effect>

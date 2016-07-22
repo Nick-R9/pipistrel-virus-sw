@@ -1,20 +1,35 @@
 <?xml version="1.0"?>
 <!--
   File:     rotax912uls.xml
-  Author:   Aero-Matic v 0.82
+  Author:   Nick R
 
-  Inputs:
-    name:           rotax912uls
-    type:           piston
-    power:          100.0 hp
-    augmented?      no
-    injected?       no
+  Rotax 912 ULS engine specs
+  
+  Technical data
+    Bore:   3.31 in
+    Stroke: 2.40 in
+    Displacement: 82.5 in3
+    Compression ratio: 10.8: 1
+
+  Fuel consumption
+    max:                    7.1 gal/h
+    max. continuous power:  6.6 gal/h
+    75%:                    4.9 gal/h
+
+  Performance data for variable pitch propeller
+    max:                    5800 rpm, 100 HP, 89.24 ft.lb, 27.5 in.HG
+    max. continuous power:  5500 rpm,  90 HP, 88.36 ft.lb,   27 in.HG
+    75%:                    5000 rpm,  68 HP, 71.84 ft.lb,   26 in.HG
+    65%:                    4800 rpm,  60 HP, 65.43 ft.lb,   26 in.HG
+    55%:                    4300 rpm,  50 HP, 62.17 ft.lb,   24 in.HG
+
+  Max performance or take-off performance is limited to 5 minutes.
 -->
 
 <piston_engine name="rotax912uls">
-  <minmp unit="INHG">          6.0 </minmp>
+  <minmp unit="INHG">         12.0 </minmp>
   <maxmp unit="INHG">         27.5 </maxmp>
-  <displacement unit="IN3"> 72.00 </displacement>
+  <displacement unit="IN3"> 82.50 </displacement>
   <maxhp>       100.00 </maxhp>
   <cycles>         4.0 </cycles>
   <idlerpm>     1400.0 </idlerpm>
@@ -25,9 +40,9 @@
   <volumetric-efficiency> 0.85 </volumetric-efficiency>
  <!-- Defining <bsfc> over-rides the built-in horsepower calculations -->
   <!--<bsfc>           0.45 </bsfc>-->
-  <stroke unit="IN"> 2.4  </stroke>
+  <stroke unit="IN"> 2.40  </stroke>
   <bore unit="IN"> 3.31 </bore>
   <cylinders>      4.0  </cylinders>
-  <compression-ratio> 10.5  </compression-ratio>
+  <compression-ratio> 10.8  </compression-ratio>
   <static-friction  unit="HP"> .5  </static-friction>
 </piston_engine>

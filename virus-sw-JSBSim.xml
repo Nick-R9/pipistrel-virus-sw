@@ -5,49 +5,70 @@
   xsi:noNamespaceSchemaLocation="http://jsbsim.sourceforge.net/JSBSim.xsd">
 
 <fileheader>
-  <author> Aeromatic v 0.95, Nick Reimer </author>
+  <author> Nick Reimer </author>
   <filecreationdate>2015-01-01</filecreationdate>
-  <version>$Revision: 1.15 $</version>
+  <version>$Revision: 1.20 $</version>
   <description> Models a Pipistrel Virus SW 100. </description>
 </fileheader>
 
 <!--
-  File:     virus-sw.xml
-  Inputs:
-    name:          virus-sw
-    type:          light single
-    max weight:    1323 lb
-    wing span:     35.13951 ft
-    length:        21.3265 ft
-    wing area:     102.37477911 sq-ft
-    gear type:     tricycle
-    retractable?:  no
-    # engines:     1
-    engine type:   piston
-    engine layout: forward fuselage
-    yaw damper?    no
+Virus SW specs
 
-  Outputs:
-    wing loading:  12.92 lb/sq-ft
-    payload:       490.0 lbs
-    CL-alpha:      5 per radian
-    CL-0:          0.25
-    CL-max:        1.4
-    CD-0:          0.028
-    K:             0.04
+Sizes
+  wing span:    35.13 ft
+  lenght:       21.33 ft
+  height:        6.07 ft
+  wing area:    96.6 ft2
+  rudder area:  11.8 ft2
+  tail area:    11.6 ft2
+  aspect ratio: 11.3
+  wing incidence angle: 2.8?
 
+  My estimates. math could make these more accurate:
+  horizontal tail arm: 14.72 ft
+  vertical tail arm:   14.34 ft
+  wing chord:            2.7 ft
+
+Weights
+  empty weight:         637 lbs
+  MTOW:                 1322 lbs
+  fuel tanks capacity:  2 x 13.2 gal
+  useful fuel:          2 x 12.4 gal
+  baggage weights with parachute fitted: 45 pounds
+
+Performance
+  stall with flaps:      35 knots
+  stall without flaps:   43 knots
+  cruising speed:        147 knots
+  max. horizontal speed: 153 knots
+  VNE:                   163 knots
+  max speed with airbrakes:        111 knots
+  max speed with flaps:            70 knots
+  turbulance penetration speed Vb: 135 knots
+  best climb speed:                80 knots
+  max climb rate:                  1653 fpm
+  best glide ratio:                64 knots
+  best glide:                      1:15
+  take off run:                    311 feet
+  take off over 15 m obstacle:     575 feet
+  service ceiling:                 22300 feet
+  45?-45? roll time:               1.6 sec
+  fuel consum. at cruis. speed:    4.7 gph
+  endurance:                       5.3 hours
+  range distance:                  783 nm
+  max load factor permitted ( x 1.8): +4g -2g
 -->
 
 <metrics>
-  <wingarea  unit="FT2">  102.37 </wingarea>
-  <wingspan  unit="FT" >   35.14 </wingspan>
-  <wing_incidence>          2.80 </wing_incidence>
-  <chord     unit="FT" >    2.91 </chord>
-  <htailarea unit="FT2">   11.63 </htailarea>
-  <htailarm  unit="FT" >   11.09 </htailarm>
-  <vtailarea unit="FT2">   11.84 </vtailarea>
-  <vtailarm  unit="FT" >   10.66 </vtailarm>
-  <location name="AERORP" unit="IN">
+   <wingarea  unit="FT2">   96.60 </wingarea>
+   <wingspan  unit="FT" >   35.13 </wingspan>
+   <wing_incidence>          2.80 </wing_incidence>
+   <chord     unit="FT" >    2.75 </chord>
+   <htailarea unit="FT2">   11.60 </htailarea>
+   <htailarm  unit="FT" >   14.72 </htailarm>
+   <vtailarea unit="FT2">   11.80 </vtailarea>
+   <vtailarm  unit="FT" >   14.34 </vtailarm>
+   <location name="AERORP" unit="IN">
     <x>   5.00 </x>
     <y>   0.00 </y>
     <z>  16.14 </z>
@@ -65,18 +86,18 @@
 </metrics>
 
 <mass_balance>
-  <ixx unit="SLUG*FT2">       445 </ixx>
-  <iyy unit="SLUG*FT2">       292 </iyy>
-  <izz unit="SLUG*FT2">       696 </izz>
-  <emptywt unit="LBS" >       637 </emptywt>
-  <location name="CG" unit="IN">
+   <ixx unit="SLUG*FT2">       706 </ixx>
+   <iyy unit="SLUG*FT2">       245 </iyy>
+   <izz unit="SLUG*FT2">       871 </izz>
+   <emptywt unit="LBS" >       637 </emptywt>
+   <location name="CG" unit="IN">
     <x>   0.00 </x>
     <y>   0.00 </y>
     <z>   0.00 </z>
   </location>
   <pointmass name="Payload">
-    <description> 512 LBS + full (174 LBS) fuel should bring model up to entered max weight</description>
-    <weight unit="LBS">    245.0 </weight>
+    <description> 581 LBS + full (104 LBS) fuel should bring model up to entered max weight</description>
+    <weight unit="LBS">    290.3 </weight>
     <location name="POINTMASS" unit="IN">
       <x>   0.00 </x>
       <y>   0.00 </y>
@@ -86,22 +107,6 @@
 </mass_balance>
 
 <ground_reactions>
-
-  <contact type="BOGEY" name="NOSE">
-  <location unit="IN">
-    <x> -47.27 </x>
-    <y>   0.00 </y>
-    <z> -41.71 </z>
-  </location>
-  <static_friction>  0.90 </static_friction>
-  <dynamic_friction> 0.70 </dynamic_friction>
-  <rolling_friction> 0.02 </rolling_friction>
-  <spring_coeff unit="LBS/FT">       1396.90 </spring_coeff>
-  <damping_coeff unit="LBS/FT/SEC">   661.50 </damping_coeff>
-  <max_steer unit="DEG"> 15.00 </max_steer>
-  <brake_group>NONE</brake_group>
-  <retractable>0</retractable>
-  </contact>
 
   <contact type="BOGEY" name="LEFT_MAIN">
   <location unit="IN">
@@ -132,6 +137,22 @@
   <damping_coeff unit="LBS/FT/SEC">   661.50 </damping_coeff>
   <max_steer unit="DEG">0</max_steer>
   <brake_group>RIGHT</brake_group>
+  <retractable>0</retractable>
+  </contact>
+  
+  <contact type="BOGEY" name="NOSE">
+  <location unit="IN">
+    <x> -47.27 </x>
+    <y>   0.00 </y>
+    <z> -41.71 </z>
+  </location>
+  <static_friction>  0.90 </static_friction>
+  <dynamic_friction> 0.70 </dynamic_friction>
+  <rolling_friction> 0.02 </rolling_friction>
+  <spring_coeff unit="LBS/FT">       1396.90 </spring_coeff>
+  <damping_coeff unit="LBS/FT/SEC">   661.50 </damping_coeff>
+  <max_steer unit="DEG"> 15.00 </max_steer>
+  <brake_group>NONE</brake_group>
   <retractable>0</retractable>
   </contact>
 
@@ -190,7 +211,7 @@
       <yaw>   0.00 </yaw>
     </orient>
     <feed>0</feed>
-    <thruster file="prop_63in">
+    <thruster file="prop_67in">
     <sense> 1 </sense>
     <location unit="IN">
       <x> -81.00 </x>
@@ -455,7 +476,7 @@
           <property>aero/qbar-psf</property>
           <property>metrics/Sw-sqft</property>
           <property>fcs/spoiler-pos-norm</property>
-          <value>0</value>
+          <value>-0.05</value> <!--TODO make more accurate-->
       </product>
     </function>
 
@@ -481,10 +502,10 @@
           <table>
             <independentVar lookup="row">aero/alpha-rad</independentVar>
             <tableData>
-            -1.57    1.500
-            -0.26    0.036
-              0.00    0.028
-              0.26    0.036
+             -1.57    1.500
+             -0.26    0.016
+              0.00    0.012
+              0.26    0.016
               1.57    1.500
             </tableData>
           </table>
@@ -497,7 +518,7 @@
           <property>aero/qbar-psf</property>
           <property>metrics/Sw-sqft</property>
           <property>aero/cl-squared</property>
-          <value>0.04</value>
+          <value>0.023</value>
         </product>
     </function>
 
@@ -582,7 +603,7 @@
 
   </axis>
 
-  <axis name="ROLL">
+  <axis name="ROLL"><!-- TODO make roll rate accurate -->
 
     <function name="aero/moment/Roll_beta">
       <description>Roll moment due to beta</description>

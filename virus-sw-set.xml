@@ -77,7 +77,7 @@
         <magnetos type="int">3</magnetos>
         <master-bat type="bool">true</master-bat>
         <master-alt type="bool">true</master-alt>
-        <propeller-pitch>0.875</propeller-pitch>
+        <propeller-pitch>0.85</propeller-pitch>
       </engine>
     </engines>
     <engines>
@@ -115,6 +115,31 @@
           <property>/controls/flight/spoilers</property>
         </binding>
       </key>
+      <key n="110">
+        <name>n</name>
+        <desc>Propeller Finer</desc>
+        <repeatable type="bool">true</repeatable>
+        <binding>
+          <command>property-adjust</command>
+          <property>/controls/engines/engine/propeller-pitch</property>
+          <step>0.05</step>
+          <min>0</min>
+          <max>1</max>
+        </binding>
+      </key>
+      <key n="78">
+        <name>N</name>
+        <desc>Propeller Coarser</desc>
+        <repeatable type="bool">true</repeatable>
+        <binding>
+          <command>property-adjust</command>
+          <property>/controls/engines/engine/propeller-pitch</property>
+          <step>-0.05</step>
+          <min>0</min>
+          <max>1</max>
+        </binding>
+      </key>
+
     </keyboard>
   </input>
 
