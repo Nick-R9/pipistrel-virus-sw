@@ -5,368 +5,312 @@
   <path>virus-sw.ac</path>
 
 
- <effect>
+  <effect>
     <inherits-from>Effects/model-transparent</inherits-from>
     <object-name>windshield</object-name>
     <object-name>window_left</object-name>
     <object-name>window_right</object-name>
     <object-name>sun_roof</object-name>
- </effect>
+    <object-name>prop_fast</object-name>
+  </effect>
  
- 
- <effect>
-   <inherits-from>Effects/model-transparent</inherits-from>
-   <object-name>prop_fast</object-name>
- </effect>
-
-
-<!--  <animation>
-    <condition>
-        <not>
-            <property>sim/rendering/rembrandt/enabled</property>
-        </not>
-    </condition>  
-
-    <type>material</type> 
-      <object-name>aileron_left</object-name>
-      <object-name>aileron_right</object-name>
-      <object-name>dashboard</object-name>
-      <object-name>door</object-name>
-      <object-name>elevator</object-name>
-      <object-name>fairing_front</object-name>
-      <object-name>fairing_left</object-name>
-      <object-name>fairing_right</object-name>
-      <object-name>floor</object-name>
-      <object-name>fuslage</object-name>
-      <object-name>glareshield</object-name>
-      <object-name>prop</object-name>
-      <object-name>prop_fast</object-name>
-      <object-name>rudder</object-name>
-      <object-name>seats</object-name>
-      <object-name>stick_left</object-name>
-      <object-name>stick_handle_left</object-name>
-      <object-name>stick_cover_left</object-name>
-      <object-name>spinner</object-name>
-      <object-name>spoiler_left</object-name>
-      <object-name>spoiler_right</object-name>
-      <object-name>spoiler_shaft_left</object-name>
-      <object-name>spoiler_shaft_right</object-name>
-      <object-name>spoiler_shaft1_left</object-name>
-      <object-name>spoiler_shaft1_right</object-name>
-      <object-name>strut_front</object-name>
-      <object-name>strut_left</object-name>
-      <object-name>strut_right</object-name>
-      <object-name>sun_roof</object-name>
-      <object-name>w_shaft</object-name>
-      <object-name>wheel_left</object-name>
-      <object-name>wheel_right</object-name>
-      <object-name>wheel_front</object-name>
-      <object-name>windshield</object-name>
-      <object-name>window_left</object-name>
-      <object-name>window_right</object-name>
-
-    <property-base>sim/model/livery/</property-base> 
-    <texture-prop>texture</texture-prop>  
-    <texture>Liveries/PVSWA.png</texture>
-  </animation>-->
-
 <!-- propeller animation -->
- <animation>
-   <type>spin</type>
-   <object-name>prop</object-name>
-   <property>engines/engine[0]/rpm</property>
-   <factor>-1</factor>
-   <center>
-     <x-m>0</x-m>
-     <y-m>0</y-m>
-     <z-m>0</z-m>
-   </center>
-   <axis>
-     <x>1</x>
-     <y>0</y>
-     <z>0</z>
-   </axis>
- </animation>
-
- <animation>
-   <type>select</type>
-   <object-name>prop</object-name>
-   <condition>
-     <less-than>
-       <property>engines/engine[0]/rpm</property>
-       <value>500</value>
-     </less-than>
-   </condition>
- </animation>
-
- <animation>
-  <type>select</type>
-  <object-name>prop_fast</object-name>
-  <condition>
-   <greater-than>
+  <animation>
+    <type>spin</type>
+    <object-name>prop</object-name>
     <property>engines/engine[0]/rpm</property>
-    <value>400</value>
-   </greater-than>
-  </condition>
- </animation>
+    <factor>-1</factor>
+    <center>
+      <x-m>0</x-m>
+      <y-m>0</y-m>
+      <z-m>0</z-m>
+    </center>
+    <axis>
+      <x>1</x>
+      <y>0</y>
+      <z>0</z>
+    </axis>
+  </animation>
 
- <animation>
-   <type>blend</type>
-   <object-name>prop_fast</object-name>
-   <property>engines/engine[0]/rpm</property>
-   <factor>0.0002</factor>
-   <max>1.0</max>
-   <min>0.0</min>
- </animation>
+  <animation>
+    <type>select</type>
+    <object-name>prop</object-name>
+    <condition>
+      <less-than>
+        <property>engines/engine[0]/rpm</property>
+        <value>500</value>
+      </less-than>
+    </condition>
+  </animation>
 
- <animation>
-   <type>spin</type>
-   <object-name>prop_fast</object-name>
-   <property>engines/engine[0]/rpm</property>
-   <factor>-0.001</factor>
-   <center>
-     <x-m>0</x-m>
-     <y-m>0</y-m>
-     <z-m>0</z-m>
-   </center>
-   <axis>
-     <x>1</x>
-     <y>0</y>
-     <z>0</z>
-   </axis>
- </animation>
+  <animation>
+    <type>select</type>
+    <object-name>prop_fast</object-name>
+    <condition>
+      <greater-than>
+        <property>engines/engine[0]/rpm</property>
+        <value>400</value>
+      </greater-than>
+    </condition>
+  </animation>
+
+  <animation>
+    <type>blend</type>
+    <object-name>prop_fast</object-name>
+    <property>engines/engine[0]/rpm</property>
+    <factor>0.0002</factor>
+    <max>1.0</max>
+    <min>0.0</min>
+  </animation>
+
+  <animation>
+    <type>spin</type>
+    <object-name>prop_fast</object-name>
+    <property>engines/engine[0]/rpm</property>
+    <factor>-0.001</factor>
+    <center>
+      <x-m>0</x-m>
+      <y-m>0</y-m>
+      <z-m>0</z-m>
+    </center>
+    <axis>
+      <x>1</x>
+      <y>0</y>
+      <z>0</z>
+    </axis>
+  </animation>
 <!-- end of propeller animation -->
 
 <!-- aileron animation -->
- <animation>
-  <object-name>aileron_left</object-name>
-  <type>rotate</type>
-  <property>surface-positions/left-aileron-pos-norm</property>
-  <factor>25</factor>
-  <center>
-   <x-m> 0.73</x-m>
-   <y-m>-2.40</y-m>
-   <z-m> 0.50</z-m>
-  </center>
-  <axis>
-   <x> 0   </x>
-   <y> 1   </y>
-   <z>-0.03</z>
-  </axis>
- </animation>
+  <animation>
+    <object-name>aileron_left</object-name>
+    <type>rotate</type>
+    <property>surface-positions/left-aileron-pos-norm</property>
+    <factor>25</factor>
+    <center>
+      <x-m> 0.73</x-m>
+      <y-m>-2.40</y-m>
+      <z-m> 0.50</z-m>
+    </center>
+    <axis>
+      <x> 0   </x>
+      <y> 1   </y>
+      <z>-0.03</z>
+    </axis>
+  </animation>
  
   <animation>
-  <type>rotate</type>
-  <object-name>aileron_right</object-name>
-  <property>surface-positions/right-aileron-pos-norm</property>
-  <factor>25</factor>
-  <center>
-   <x-m> 0.73</x-m>
-   <y-m> 2.40</y-m>
-   <z-m> 0.50</z-m>
-  </center>
-  <axis>
-   <x> 0   </x>
-   <y>-1   </y>
-   <z>-0.03</z>
-  </axis>
- </animation>
+    <type>rotate</type>
+    <object-name>aileron_right</object-name>
+    <property>surface-positions/right-aileron-pos-norm</property>
+    <factor>25</factor>
+    <center>
+      <x-m> 0.73</x-m>
+      <y-m> 2.40</y-m>
+      <z-m> 0.50</z-m>
+    </center>
+    <axis>
+      <x> 0   </x>
+      <y>-1   </y>
+      <z>-0.03</z>
+    </axis>
+  </animation>
 <!-- end of aileron animation -->
  
 <!-- flap animation -->
- <animation>
-   <type>rotate</type>
-   <object-name>aileron_left</object-name>
-   <property>surface-positions/flap-pos-norm</property>
-   <factor>19</factor>
-   <center>
-     <x-m> 0.73</x-m>
-     <y-m>-2.40</y-m>
-     <z-m> 0.50</z-m>
-     </center>
-   <axis>
-     <x> 0   </x>
-     <y> 1   </y>
-     <z>-0.03</z>
-   </axis>
- </animation>
+  <animation>
+    <type>rotate</type>
+    <object-name>aileron_left</object-name>
+    <property>surface-positions/flap-pos-norm</property>
+    <factor>19</factor>
+    <center>
+      <x-m> 0.73</x-m>
+      <y-m>-2.40</y-m>
+      <z-m> 0.50</z-m>
+      </center>
+    <axis>
+      <x> 0   </x>
+      <y> 1   </y>
+      <z>-0.03</z>
+    </axis>
+  </animation>
 
- <animation>
-   <type>rotate</type>
-   <object-name>aileron_right</object-name>
-   <property>surface-positions/flap-pos-norm</property>
-   <factor>19</factor>
-  <center>
-    <x-m> 0.73</x-m>
-    <y-m> 2.40</y-m>
-    <z-m> 0.50</z-m>
-  </center>
-  <axis>
-    <x> 0   </x>
-    <y> 1   </y>
-    <z> 0.03</z>
-  </axis>
- </animation> 
+  <animation>
+    <type>rotate</type>
+    <object-name>aileron_right</object-name>
+    <property>surface-positions/flap-pos-norm</property>
+    <factor>19</factor>
+    <center>
+      <x-m> 0.73</x-m>
+      <y-m> 2.40</y-m>
+      <z-m> 0.50</z-m>
+    </center>
+    <axis>
+      <x> 0   </x>
+      <y> 1   </y>
+      <z> 0.03</z>
+    </axis>
+  </animation> 
 <!-- end of flap animation -->
 
 <!-- spoiler animation -->
- <animation>
-   <type>rotate</type>
-   <object-name>spoiler_shaft_left</object-name>
-   <object-name>spoiler_left</object-name>
-   <property>surface-positions/spoilers-pos-norm</property>
-   <factor>45</factor>
-   <center>
-     <x-m> 0.5000</x-m>
-     <y-m>-2.7590</y-m>
-     <z-m> 0.5544</z-m>
-   </center>
-   <axis>
-     <x>-1</x>
-     <y>0</y>
-     <z>0.52</z>
-   </axis>
- </animation>
- <animation>
-   <type>rotate</type>
-   <object-name>spoiler_shaft1_left</object-name>
-   <property>surface-positions/spoilers-pos-norm</property>
-   <factor>45</factor>
-   <center>
-     <x-m> 0.5012</x-m>
-     <y-m>-2.0496</y-m>
-     <z-m> 0.5291</z-m>
-   </center>
-   <axis>
-     <x>-1</x>
-     <y>0</y>
-     <z>0.52</z>
-   </axis>
- </animation>
- <animation>
-   <type>rotate</type>
-   <object-name>spoiler_left</object-name>
-   <property>surface-positions/spoilers-pos-norm</property>
-   <factor>45</factor>
-   <center>
-     <x-m> 0.5140</x-m>
-     <y-m>-2.8803</y-m>
-     <z-m> 0.5825</z-m>
-   </center>
-   <axis>
-     <x>1</x>
-     <y>0</y>
-     <z>-0.52</z>
-   </axis>
- </animation>
+  <animation>
+    <type>rotate</type>
+    <object-name>spoiler_shaft_left</object-name>
+    <object-name>spoiler_left</object-name>
+    <property>surface-positions/spoilers-pos-norm</property>
+    <factor>45</factor>
+    <center>
+      <x-m> 0.5000</x-m>
+      <y-m>-2.7590</y-m>
+      <z-m> 0.5544</z-m>
+    </center>
+    <axis>
+      <x>-1</x>
+      <y>0</y>
+      <z>0.52</z>
+    </axis>
+  </animation>
+  <animation>
+    <type>rotate</type>
+    <object-name>spoiler_shaft1_left</object-name>
+    <property>surface-positions/spoilers-pos-norm</property>
+    <factor>45</factor>
+    <center>
+      <x-m> 0.5012</x-m>
+      <y-m>-2.0496</y-m>
+      <z-m> 0.5291</z-m>
+    </center>
+    <axis>
+      <x>-1</x>
+      <y>0</y>
+      <z>0.52</z>
+    </axis>
+  </animation>
+  <animation>
+    <type>rotate</type>
+    <object-name>spoiler_left</object-name>
+    <property>surface-positions/spoilers-pos-norm</property>
+    <factor>45</factor>
+    <center>
+      <x-m> 0.5140</x-m>
+      <y-m>-2.8803</y-m>
+      <z-m> 0.5825</z-m>
+    </center>
+    <axis>
+      <x>1</x>
+      <y>0</y>
+      <z>-0.52</z>
+    </axis>
+  </animation>
 
- <animation>
-   <type>rotate</type>
-   <object-name>spoiler_shaft_right</object-name>
-   <object-name>spoiler_right</object-name>
-   <property>surface-positions/spoilers-pos-norm</property>
-   <factor>45</factor>
-   <center>
-     <x-m> 0.5000</x-m>
-     <y-m> 2.7590</y-m>
-     <z-m> 0.5544</z-m>
-   </center>
-   <axis>
-     <x>1</x>
-     <y>0</y>
-     <z>-0.52</z>
-   </axis>
- </animation>
- <animation>
-   <type>rotate</type>
-   <object-name>spoiler_shaft1_right</object-name>
-   <property>surface-positions/spoilers-pos-norm</property>
-   <factor>45</factor>
-   <center>
-     <x-m> 0.5012</x-m>
-     <y-m> 2.0496</y-m>
-     <z-m> 0.5291</z-m>
-   </center>
-   <axis>
-     <x>1</x>
-     <y>0</y>
-     <z>-0.52</z>
-   </axis>
- </animation>
- <animation>
-   <type>rotate</type>
-   <object-name>spoiler_right</object-name>
-   <property>surface-positions/spoilers-pos-norm</property>
-   <factor>45</factor>
-   <center>
-     <x-m> 0.5140</x-m>
-     <y-m> 2.8803</y-m>
-     <z-m> 0.5825</z-m>
-   </center>
-   <axis>
-     <x>-1</x>
-     <y>0</y>
-     <z>0.52</z>
-   </axis>
- </animation>
+  <animation>
+    <type>rotate</type>
+    <object-name>spoiler_shaft_right</object-name>
+    <object-name>spoiler_right</object-name>
+    <property>surface-positions/spoilers-pos-norm</property>
+    <factor>45</factor>
+    <center>
+      <x-m> 0.5000</x-m>
+      <y-m> 2.7590</y-m>
+      <z-m> 0.5544</z-m>
+    </center>
+    <axis>
+      <x>1</x>
+      <y>0</y>
+      <z>-0.52</z>
+    </axis>
+  </animation>
+  <animation>
+    <type>rotate</type>
+    <object-name>spoiler_shaft1_right</object-name>
+    <property>surface-positions/spoilers-pos-norm</property>
+    <factor>45</factor>
+    <center>
+      <x-m> 0.5012</x-m>
+      <y-m> 2.0496</y-m>
+      <z-m> 0.5291</z-m>
+    </center>
+    <axis>
+      <x>1</x>
+      <y>0</y>
+      <z>-0.52</z>
+    </axis>
+  </animation>
+  <animation>
+    <type>rotate</type>
+    <object-name>spoiler_right</object-name>
+    <property>surface-positions/spoilers-pos-norm</property>
+    <factor>45</factor>
+    <center>
+      <x-m> 0.5140</x-m>
+      <y-m> 2.8803</y-m>
+      <z-m> 0.5825</z-m>
+    </center>
+    <axis>
+      <x>-1</x>
+      <y>0</y>
+      <z>0.52</z>
+    </axis>
+  </animation>
 <!-- end of spoiler animation -->
 
 <!-- rudder animation -->
- <animation>
-     <type>rotate</type>
-     <object-name>rudder</object-name>
-     <property>surface-positions/rudder-pos-norm</property>
-     <factor>19</factor>
-     <center>
-         <x-m>4.39</x-m>
-         <y-m>0   </y-m>
-         <z-m>0.17</z-m>
-     </center>
-     <axis>
-         <x>0.25</x>
-         <y>0  </y>
-         <z>1  </z>
-     </axis>
+  <animation>
+    <type>rotate</type>
+    <object-name>rudder</object-name>
+    <property>surface-positions/rudder-pos-norm</property>
+    <factor>19</factor>
+    <center>
+      <x-m>4.39</x-m>
+      <y-m>0   </y-m>
+      <z-m>0.17</z-m>
+    </center>
+    <axis>
+      <x>0.25</x>
+      <y>0  </y>
+      <z>1  </z>
+    </axis>
  </animation>
 <!-- end of rudder animation -->
 
 <!-- front wheel animation -->
- <animation>
-     <type>rotate</type>
-     <object-name>fairing_front</object-name>
-     <object-name>wheel_front</object-name>
-     <property>surface-positions/rudder-pos-norm</property>
-     <factor>30</factor>
-     <center>
-         <x-m>-1.08</x-m>
-         <y-m> 0.00</y-m>
-         <z-m>-0.77</z-m>
-     </center>
-     <axis>
-         <x> 0 </x>
-         <y> 0 </y>
-         <z>-1 </z>
-     </axis>
+  <animation>
+    <type>rotate</type>
+    <object-name>fairing_front</object-name>
+    <object-name>wheel_front</object-name>
+    <property>surface-positions/rudder-pos-norm</property>
+    <factor>30</factor>
+    <center>
+      <x-m>-1.08</x-m>
+      <y-m> 0.00</y-m>
+      <z-m>-0.77</z-m>
+    </center>
+    <axis>
+      <x> 0 </x>
+      <y> 0 </y>
+      <z>-1 </z>
+    </axis>
  </animation>
 <!-- end of front wheel animation -->
 
 <!-- elevator animation -->
- <animation>
-   <type>rotate</type>
-   <object-name>elevator</object-name>
-   <property>surface-positions/elevator-pos-norm</property>
-   <factor>25</factor>
-    <center>
-      <x-m>  4.50 </x-m>
-      <y-m>  0   </y-m>
-      <z-m>  0.74 </z-m>
-    </center>
-    <axis>
-      <x>  0 </x>
-      <y>  1 </y>
-      <z>  0 </z>
-    </axis>
- </animation>
+  <animation>
+    <type>rotate</type>
+    <object-name>elevator</object-name>
+    <property>surface-positions/elevator-pos-norm</property>
+    <factor>25</factor>
+      <center>
+        <x-m>  4.50 </x-m>
+        <y-m>  0   </y-m>
+        <z-m>  0.74 </z-m>
+      </center>
+      <axis>
+        <x>  0 </x>
+        <y>  1 </y>
+        <z>  0 </z>
+      </axis>
+  </animation>
 <!-- end of elevator animation -->
 
 <!-- control stick animation -->
@@ -389,28 +333,28 @@
  </animation>
  
   <animation>
-   <type>rotate</type>
-   <object-name>stick_cover2_left</object-name>
-   <property>surface-positions/elevator-pos-norm</property>
-   <factor>10</factor>
-    <center>
-      <x-m>  -0.195 </x-m>
-      <y-m>  -0.225 </y-m>
-      <z-m>  -0.450 </z-m>
-    </center>
-    <axis>
-      <x>  0 </x>
-      <y> -1 </y>
-      <z>  0 </z>
-    </axis>
+    <type>rotate</type>
+    <object-name>stick_cover2_left</object-name>
+    <property>surface-positions/elevator-pos-norm</property>
+    <factor>10</factor>
+      <center>
+        <x-m>  -0.195 </x-m>
+        <y-m>  -0.225 </y-m>
+        <z-m>  -0.450 </z-m>
+      </center>
+      <axis>
+        <x>  0 </x>
+        <y> -1 </y>
+        <z>  0 </z>
+      </axis>
  </animation>
 
   <animation>
-   <type>rotate</type>
-   <object-name>stick_left</object-name>
-   <object-name>stick_handle_left</object-name>
-   <property>surface-positions/left-aileron-pos-norm</property>
-   <factor>25</factor>
+    <type>rotate</type>
+    <object-name>stick_left</object-name>
+    <object-name>stick_handle_left</object-name>
+    <property>surface-positions/left-aileron-pos-norm</property>
+    <factor>25</factor>
     <center>
       <x-m>  -0.195 </x-m>
       <y-m>  -0.225 </y-m>
@@ -424,10 +368,10 @@
   </animation>
  
   <animation>
-   <type>rotate</type>
-   <object-name>stick_cover2_left</object-name>
-   <property>surface-positions/left-aileron-pos-norm</property>
-   <factor>10</factor>
+    <type>rotate</type>
+    <object-name>stick_cover2_left</object-name>
+    <property>surface-positions/left-aileron-pos-norm</property>
+    <factor>10</factor>
     <center>
       <x-m>  -0.195 </x-m>
       <y-m>  -0.225 </y-m>
@@ -441,11 +385,11 @@
   </animation>
 
   <animation>
-   <type>rotate</type>
-   <object-name>stick_right</object-name>
-   <object-name>stick_handle_right</object-name>
-   <property>surface-positions/elevator-pos-norm</property>
-   <factor>25</factor>
+    <type>rotate</type>
+    <object-name>stick_right</object-name>
+    <object-name>stick_handle_right</object-name>
+    <property>surface-positions/elevator-pos-norm</property>
+    <factor>25</factor>
     <center>
       <x-m>  -0.195 </x-m>
       <y-m>   0.225 </y-m>
@@ -459,10 +403,10 @@
  </animation>
 
   <animation>
-   <type>rotate</type>
-   <object-name>stick_cover2_right</object-name>
-   <property>surface-positions/elevator-pos-norm</property>
-   <factor>10</factor>
+    <type>rotate</type>
+    <object-name>stick_cover2_right</object-name>
+    <property>surface-positions/elevator-pos-norm</property>
+    <factor>10</factor>
     <center>
       <x-m>  -0.195 </x-m>
       <y-m>   0.225 </y-m>
@@ -476,11 +420,11 @@
  </animation>
 
   <animation>
-   <type>rotate</type>
-   <object-name>stick_right</object-name>
-   <object-name>stick_handle_right</object-name>
-   <property>surface-positions/left-aileron-pos-norm</property>
-   <factor>25</factor>
+    <type>rotate</type>
+    <object-name>stick_right</object-name>
+    <object-name>stick_handle_right</object-name>
+    <property>surface-positions/left-aileron-pos-norm</property>
+    <factor>25</factor>
     <center>
       <x-m>  -0.195 </x-m>
       <y-m>   0.225 </y-m>
@@ -494,10 +438,10 @@
  </animation>
 
   <animation>
-   <type>rotate</type>
-   <object-name>stick_cover2_right</object-name>
-   <property>surface-positions/left-aileron-pos-norm</property>
-   <factor>10</factor>
+    <type>rotate</type>
+    <object-name>stick_cover2_right</object-name>
+    <property>surface-positions/left-aileron-pos-norm</property>
+    <factor>10</factor>
     <center>
       <x-m>  -0.195 </x-m>
       <y-m>   0.225 </y-m>
@@ -508,23 +452,23 @@
       <y>  0 </y>
       <z>  0 </z>
     </axis>
- </animation>
+  </animation>
 <!-- end of control stick animation -->
 
 <!-- gear compression animation  -->
- <animation>
-   <type>translate</type>
-   <object-name>w_shaft</object-name>
-   <object-name>fairing_front</object-name>
-   <object-name>wheel_front</object-name>
-   <property>gear/gear[0]/compression-norm</property>
-   <factor>0.30</factor>
-   <axis>
-     <x> 0.522 </x>
-     <y> 0 </y>
-     <z> 1.0 </z>
-   </axis>
- </animation>
+  <animation>
+    <type>translate</type>
+    <object-name>w_shaft</object-name>
+    <object-name>fairing_front</object-name>
+    <object-name>wheel_front</object-name>
+    <property>gear/gear[0]/compression-norm</property>
+    <factor>0.30</factor>
+    <axis>
+      <x> 0.522 </x>
+      <y> 0 </y>
+      <z> 1.0 </z>
+    </axis>
+  </animation>
 
   <animation>
     <type>rotate</type>
@@ -573,37 +517,37 @@
 <!-- end of gear compression animation -->
 
 <!-- door animation -->
- <animation>
-  <type>rotate</type>
-  <object-name>window_left</object-name>
-  <object-name>door_left</object-name>
-  <property>/door1/position-norm</property>
-  <interpolation>
-    <entry><ind> 0 </ind><dep>  0 </dep></entry>
-    <entry><ind>0.4</ind><dep> 10 </dep></entry>
-    <entry><ind> 1 </ind><dep> 90 </dep></entry>
-  </interpolation>
-  <center>
-   <x-m>  0.22 </x-m>
-   <y-m> -0.49 </y-m>
-   <z-m>  0.40 </z-m>
-  </center>
-  <axis>
-   <x>-1</x>
-   <y>0</y>
-   <z>0.12</z>
-  </axis>
- </animation>
+  <animation>
+    <type>rotate</type>
+    <object-name>window_left</object-name>
+    <object-name>door_left</object-name>
+    <property>/door1/position-norm</property>
+    <interpolation>
+      <entry><ind> 0 </ind><dep>  0 </dep></entry>
+      <entry><ind>0.4</ind><dep> 10 </dep></entry>
+      <entry><ind> 1 </ind><dep> 90 </dep></entry>
+    </interpolation>
+    <center>
+      <x-m>  0.22 </x-m>
+      <y-m> -0.49 </y-m>
+      <z-m>  0.40 </z-m>
+    </center>
+    <axis>
+      <x>-1</x>
+      <y>0</y>
+      <z>0.12</z>
+    </axis>
+  </animation>
 <!-- end of door animation -->
 
- <model>
-  <name>ALT</name>
-  <path>Aircraft/Instruments-3d/alt-2/alt2.xml</path>
-  <offsets>
-   <x-m>-0.385</x-m>
-   <y-m>0.15</y-m>
-   <z-m>0.23</z-m>
-  </offsets>
- </model>
+  <model>
+    <name>ALT</name>
+    <path>Aircraft/Instruments-3d/alt-2/alt2.xml</path>
+    <offsets>
+      <x-m>-0.385</x-m>
+      <y-m>0.15</y-m>
+      <z-m>0.23</z-m>
+    </offsets>
+  </model>
 
 </PropertyList>
